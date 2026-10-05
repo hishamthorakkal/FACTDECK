@@ -16,13 +16,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="loading">
   <header class="topbar">
     <a class="brand" href="#">
       <img src="img/logo.webp" alt="Volatile Facts Deck logo" width="52" height="52" />
       <span><strong>Volatile Facts Deck</strong><small>NEET SS Paediatrics</small></span>
     </a>
-    <input type="file" id="fileInput" accept=".docx,.json" hidden />
+    <button class="player-chip" id="playerChip" title="Level, streak and badges"></button>
   </header>
 
   <!-- HOME: all systems -->
@@ -34,6 +34,7 @@
         <p id="dueSub">Pick a system below, or review everything that is due.</p>
         <button class="btn start" id="startAllBtn">▶ Review all systems</button>
         <div class="counts" id="counts"></div>
+        <div id="playerBar"></div>
       </div>
     </section>
 
@@ -41,10 +42,7 @@
     <div class="systems" id="systems"></div>
 
     <footer class="foot">
-      <button class="link" id="exportBtn">Save backup</button> ·
-      <button class="link" id="restoreBtn">Restore backup</button> ·
-      <button class="link" id="sampleBtn">Load sample facts</button> ·
-      <button class="link" id="clearBtn">Clear all</button>
+      Progress is saved on this device · <button class="link" id="resetBtn">Reset my progress</button>
     </footer>
   </main>
 
@@ -53,10 +51,12 @@
     <a class="back" href="#">← All systems</a>
     <section class="sys-hero" id="sysHero"></section>
 
+    <nav class="sys-tabs" id="sysTabs"></nav>
+    <section id="tabContent"></section>
+
     <section class="facts">
       <div class="facts-head">
         <h2>Facts</h2>
-        <button class="btn small" id="addBtn">＋ Add a fact</button>
       </div>
       <input type="search" id="search" placeholder="🔍  Search this system…" />
       <div class="filters" id="filters">
@@ -74,9 +74,10 @@
 
   <dialog id="modal"><form method="dialog" id="modalForm"></form></dialog>
   <div class="toast" id="toast" role="status"></div>
+  <div class="celebrate" id="celebrate" aria-live="polite"></div>
 
-  <script src="seed.js"></script>
-  <script src="docx-import.js"></script>
+  <script src="systems.js"></script>
+  <script src="parser.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 # Volatile Facts Deck · NEET SS Paediatrics
 
-A simple, colourful revision deck for easily forgotten, frequently tested facts (doses, cutoffs, timing windows, classifications, antidotes, distractor pairs…). The deck **shrinks** as you master facts and **grows back** when you forget them.
+A simple, colourful revision site for easily forgotten, frequently tested facts (doses, cutoffs, timing windows, classifications, antidotes, distractor pairs…). The deck **shrinks** as you master facts and **grows back** when you forget them.
 
 It works as a website on a computer and as a mobile site on a phone. You can add it to your home screen and it works offline.
 
@@ -10,17 +10,31 @@ It works as a website on a computer and as a mobile site on a phone. You can add
 python -m http.server 5173
 ```
 
-Open http://localhost:5173. To use it on your phone, put the folder on a free static host (GitHub Pages, Netlify).
+Open http://localhost:5173. It needs a web server (opening `index.html` directly can't load the content files). To use it on your phone, publish the folder on a free static host (GitHub Pages, Netlify).
 
-## Systems
+## Systems and content
 
-The home page lists the 11 NEET SS systems (Neonatology, Growth/Development/Nutrition/Genetics-IEM, Cardiology, Neurology, Nephrology, GI/Hepatology, Hematology/Oncology, Endocrinology, Immunology/Rheumatology/ID/Immunization, Respiratory + mapped edge topics, PICU/Emergencies). Each system has its own fact deck. **Review all due** on the home page mixes every system; **Start Review** inside a system covers only that system.
+The home page lists the 11 systems (defined in `systems.js`). Each system has three tabs:
 
-The list of systems is in `seed.js` (`FACTDECK_SYSTEMS`).
+- **🃏 Fact Deck**: flashcards from `content/<system>/fact-deck.md`
+- **⚠️ Traps**: every `Trap:` / `Tempting:` line in that fact deck (with its decisive clue), collected automatically
+- **⚡ Rapid Revision**: notes from `content/<system>/rapid-revision.md` (printable)
 
-## How it works
+Content is plain Markdown. See [content/README.md](content/README.md) for the format. There are no upload or edit buttons on the site: update a system by replacing its file and republishing.
 
-1. **Start Review**: read the question, say the answer, tap **Show answer**.
+## Games
+
+Each system has a **🎮 Games** tab, built automatically from its content:
+
+- **🪤 Trap Hunter**: 10 traps from `traps.md`. Pick the correct rule over the tempting wrong choice.
+- **⏱️ Number Rush**: 60 seconds of fact-deck numbers (doses, cutoffs, timings), 4 choices each, with a combo bonus.
+- **🧩 Sequence Builder**: tap the steps of an algorithm in order (numbered steps in the fact deck and in Rapid Revision boxes).
+
+Reviews and games earn XP: knew it +10, forgot +2, mastered +30, Trap Hunter +5 per trap, Number Rush score ÷ 2, Sequence Builder +5 per star. XP raises your level (Intern → Resident → Senior Resident → Fellow → Consultant → Professor). A daily 🔥 streak and 9 badges are shown from the header chip.
+
+## Review
+
+1. **Start Review** (one system) or **Review all due** (every system): read the question, say the answer, tap **Show answer**.
 2. Tap **😊 I knew it** or **😕 I forgot** (on a phone you can swipe right or left).
 
 | Label | Meaning |
@@ -29,12 +43,4 @@ The list of systems is in `seed.js` (`FACTDECK_SYSTEMS`).
 | 🟡 Learning | new, or not yet stable (reviewed after 1, 3, 7 days) |
 | 🟢 Mastered | known 4 times in a row; leaves the review pile |
 
-## Uploading a .docx
-
-Open a system, tap **Upload fact deck**, and choose that system's Word file laid out like the sample: a section heading, then boxes (table cells) with a heading, `•` bullet lines and an optional `↩` source line. Two-column Question | Answer tables and "bold heading + bullet points" also work. How-to/guide boxes are skipped.
-
-To update a system later, upload its new .docx and choose **Replace with this version**. Facts still in the file keep their progress, facts removed from the file are dropped, and other systems are not touched. **Add to the current deck** keeps everything and only adds new facts. The file is read on your device and nothing is uploaded anywhere.
-
-Coloured highlights: lines starting with `Trap:` are red, `Memory cue:` yellow, `Decisive clue:` green, numbered lines become steps, `☐` lines become tick boxes, and numbers and doses are bold.
-
-Progress is stored in this browser. Use **Save backup** at the bottom of the page to move it to another device (restore it with **Restore backup**).
+Progress is stored in the browser on each device and is kept when a deck file is updated, as long as the fact's question stays the same.

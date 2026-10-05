@@ -1,6 +1,6 @@
 // Offline cache so the deck works on a phone without signal.
-const CACHE = 'factdeck-v3';
-const ASSETS = ['./', 'index.html', 'styles.css', 'app.js', 'seed.js', 'docx-import.js', 'img/logo.webp', 'img/icon-192.png', 'img/favicon.ico', 'manifest.webmanifest'];
+const CACHE = 'factdeck-v8';
+const ASSETS = ['./', 'index.html', 'styles.css', 'app.js', 'systems.js', 'parser.js', 'img/logo.webp', 'img/icon-192.png', 'img/favicon.ico', 'manifest.webmanifest'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
