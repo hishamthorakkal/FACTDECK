@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1e2a5a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Facts Deck" />
+  <title>Volatile Facts Deck · NEET SS Paediatrics</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+  <link rel="icon" href="img/icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <img src="img/logo.webp" alt="Volatile Facts Deck logo" width="52" height="52" />
+      <span><strong>Volatile Facts Deck</strong><small>NEET SS Paediatrics</small></span>
+    </a>
+    <input type="file" id="fileInput" accept=".docx,.json" hidden />
+  </header>
+
+  <!-- HOME: all systems -->
+  <main id="home">
+    <section class="hero">
+      <img class="hero-logo" src="img/logo.webp" alt="" width="150" height="150" />
+      <div class="hero-text">
+        <h1 id="dueText">Ready to revise</h1>
+        <p id="dueSub">Pick a system below, or review everything that is due.</p>
+        <button class="btn start" id="startAllBtn">▶ Review all systems</button>
+        <div class="counts" id="counts"></div>
+      </div>
+    </section>
+
+    <h2 class="block-title">Systems</h2>
+    <div class="systems" id="systems"></div>
+
+    <footer class="foot">
+      <button class="link" id="exportBtn">Save backup</button> ·
+      <button class="link" id="restoreBtn">Restore backup</button> ·
+      <button class="link" id="sampleBtn">Load sample facts</button> ·
+      <button class="link" id="clearBtn">Clear all</button>
+    </footer>
+  </main>
+
+  <!-- ONE SYSTEM -->
+  <main id="system" hidden>
+    <a class="back" href="#">← All systems</a>
+    <section class="sys-hero" id="sysHero"></section>
+
+    <section class="facts">
+      <div class="facts-head">
+        <h2>Facts</h2>
+        <button class="btn small" id="addBtn">＋ Add a fact</button>
+      </div>
+      <input type="search" id="search" placeholder="🔍  Search this system…" />
+      <div class="filters" id="filters">
+        <button data-f="all" class="on">All</button>
+        <button data-f="forgot">🔴 Forgot</button>
+        <button data-f="learning">🟡 Learning</button>
+        <button data-f="mastered">🟢 Mastered</button>
+      </div>
+      <div id="list"></div>
+    </section>
+  </main>
+
+  <!-- STUDY -->
+  <main id="study" hidden></main>
+
+  <dialog id="modal"><form method="dialog" id="modalForm"></form></dialog>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="seed.js"></script>
+  <script src="docx-import.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
