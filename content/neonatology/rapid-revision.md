@@ -1,498 +1,436 @@
 <!-- Neonatology · Part 1 Complete Rapid Revision Note -->
 
-# Neonatology — Complete Rapid Revision Note
-Days 1–12 • NEET-SS + ICP Paediatrics 2026
+# NEET-SS PAEDIATRICS — NEONATOLOGY
+FINAL SYSTEM-END REVISION • India-Aligned • Days 1–12
+Complete Rapid Revision Note + System Trap Note + Volatile Facts Deck
 
-> **REFERENCE HIERARCHY**
-> PRIMARY: Nelson Textbook of Pediatrics, 22nd Edition. SUPPLEMENTARY: current authoritative neonatal protocols and standard neonatal texts. Guideline-sensitive management is updated to the latest available authoritative protocol and labelled when it differs from older textbook teaching.
+> **REFERENCE & PROTOCOL HIERARCHY**
+> - PRIMARY textbook for concepts: Nelson Textbook of Pediatrics, 22nd Edition.
+> - For management/protocol details in an Indian exam context: prefer current IAP / IAP-NNF / NNF / ICMR-DHR guidance where applicable.
+> - If a stem explicitly names a framework (IAP, NNF, AAP, CPS, PES, NICE, European RDS etc.), answer from that named framework.
+> - International updates are labelled separately and are not silently blended with Indian guidance.
+> - No future-system content is included.
 
-> **PROTOCOL CURRENCY USED FOR THIS PACK**
-> 2025 AHA/AAP Neonatal Resuscitation; 2025 European RDS Consensus (published 2026); AAP Hyperbilirubinemia 2022 + phototherapy technical update; AAP Therapeutic Hypothermia 2026; AAP PDA Clinical Report 2025; ILAE Neonatal Seizure Guideline 2023; AAP ROP screening policy framework; ESPGHAN preterm enteral nutrition position paper; current AAP EOS frameworks.
+> **IMPORTANT FRAMEWORK DIFFERENCES TO REMEMBER**
+> - Neonatal resuscitation PPV rate: IAP/NRP teaching commonly uses 40–60/min; 2025 AHA/AAP guideline states 30–60/min. Use the named framework.
+> - Preterm starting oxygen: IAP 2022 uses 21–30%; 2025 AHA/AAP allows 30–100% for <32 weeks, titrated by pulse oximetry.
+> - RDS CPAP: NNF India CPG starts at 5 cm H₂O; European RDS 2025 uses 6–8 cm H₂O. Do not mix.
+> - Hyperbilirubinemia: NNF India and AAP 2022 differ on IVIG and some stopping/escalation details. Name the framework.
+> - Therapeutic hypothermia: NNF India 2021 gives a cautious India-specific eligibility/quality framework after HELIX; AAP 2026 is a high-income evidence framework. Keep them separate.
 
-> **PERSONALIZED PRIORITY**
-> AMBER concept from the error notebook: Jensen BPD grading at 36 weeks PMA — Grade 3 requires invasive mechanical ventilation. This distinction is deliberately repeated in the Trap Note and Volatile Facts Deck.
+# Complete Rapid Revision Note
 
-# How to Use This Pack
-
-- Pass 1 (60–90 min): read Part 1 Rapid Revision from start to finish and mark any weak tables/algorithms.
-- Pass 2 (30–45 min): read Part 2 Trap Note without looking at the “Correct rule” line first; force a discriminator before revealing it.
-- Pass 3 (15–20 min): use Part 3 Volatile Facts Deck for repeated short recalls during R2/R3 and before cumulative mocks.
-- For current clinical practice, use the named latest protocol when a guideline-specific rule is tested; do not merge criteria from different societies.
-
-## Neonatology Days 1–12 Roadmap
-
-| Day | Core domain | Exam focus |
-|---|---|---|
-| 1 | Neonatal resuscitation | Transition, PPV, compressions, epinephrine, cord/oxygen/airway |
-| 2 | Respiratory distress/RDS | CPAP/NIPPV, surfactant, TTN/MAS/CDH, oxygen |
-| 3 | Ventilation/ABG/BPD/air leak | Ventilator physiology, HFOV, ABG, BPD, pneumothorax |
-| 4 | Prematurity/ELBW/VLBW | Thermoregulation, apnea, caffeine, brain/lung/nutrition protection |
-| 5 | Sepsis/meningitis | EOS/LOS, cultures, LP, antibiotics, stewardship |
-| 6 | Jaundice/hemolysis | AAP thresholds, phototherapy, ABE, exchange, G6PD/HS/HDFN |
-| 7 | HIE/seizures | Birth asphyxia, cooling, EEG/aEEG, antiseizure management |
-| 8 | NEC/nutrition | NEC, preterm feeds, human milk, fortification, PN |
-| 9 | PDA/PPHN/hemodynamics | Echo physiology, systemic steal, selective PDA treatment, PPHN |
-| 10 | Glucose/Ca/Na/metabolic | Hypoglycemia, Ca/Mg, sodium, acid-base approach |
-| 11 | ROP/IVH/PVL/follow-up | Screening, brain injury, corrected age, neurodevelopment |
-| 12 | Integrated revision | Emergency map, cross-domain decisions, volatile numbers |
-
-## A. One-Page Neonatal Emergency Map
-
-| Presentation | First thought | Immediate next step |
-|---|---|---|
-| Apnea/gasping or HR <100 at birth | Inadequate ventilation | Effective PPV; look for HR rise |
-| HR <60 after effective ventilation | Severe bradycardia | 3:1 compressions + 100% O₂ during compressions; secure airway |
-| Preterm grunting + low-volume ground glass | RDS | CPAP/NRS; early surfactant when criteria met |
-| Ventilated infant suddenly desaturates | DOPE / air leak | Tube/circuit check; tension pneumothorax → urgent decompression |
-| Jaundice in first 24 h | Pathologic/hemolysis | TSB + trajectory + hemolysis/sepsis work-up |
-| Encephalopathy after perinatal insult, <6 h | Possible moderate/severe HIE | Assess cooling eligibility; avoid hyperthermia; EEG |
-| Preterm + distension + bloody stool | NEC | NPO + decompression + cultures/antibiotics + serial imaging/surgery |
-| Labile hypoxemia + pre/postductal gradient | PPHN | Echo; optimize lung recruitment/hemodynamics; consider pulmonary vasodilator |
-| Jittery/apneic/seizing neonate | Metabolic/CNS/sepsis | Check glucose immediately; then Ca/Na/infection/CNS |
-| Preterm infant with sudden anemia/apnea | IVH/sepsis/bleeding | Stabilize; cranial US/labs as indicated |
-
-## B. Day 1 — Neonatal Resuscitation
-
-> **CORE MECHANISM**
-> At birth, lung aeration should lower pulmonary vascular resistance and increase pulmonary blood flow. Most neonatal bradycardia is caused by inadequate ventilation/oxygenation; therefore effective lung inflation is the pivotal intervention.
-
-| Decision | Rule | Exam consequence |
-|---|---|---|
-| Routine transition | Term + good tone + breathing/crying | Warmth, skin-to-skin, observation; no routine suction |
-| Start PPV | Apnea/gasping or HR <100/min after initial steps | Ventilation is the priority; rising HR is best sign of effectiveness |
-| Start compressions | HR <60/min despite ~30 s ventilation that inflates lungs | Prefer advanced airway; 3:1 compressions:ventilation |
-| Epinephrine | HR remains <60 after optimized PPV + compressions | Intravascular 0.01–0.03 mg/kg; ET 0.05–0.1 mg/kg while access obtained |
-| Cord | Most stable newborns | Deferred clamping ≥60 s when appropriate |
-| Stop/redirect | No HR despite full resuscitation | 2025 guideline: discussion around ~20 min is reasonable |
-
-> **LATEST PROTOCOL UPDATE — AHA/AAP 2025**
-> Effective ventilation, shown by a rising heart rate, remains the central priority. Chest compressions are recommended only when HR stays <60/min despite ~30 seconds of ventilation that inflates the lungs. During compressions, an endotracheal tube is recommended; a laryngeal mask can be a reasonable alternative in infants ≥34 weeks when intubation is unsuccessful/unavailable. Use 100% oxygen during compressions, then titrate down.
-
-> **MUST-KNOW**
-> - PPV 40–60/min
-> - Compression:ventilation 3:1
-> - IV/UVC epinephrine 0.01–0.03 mg/kg
-> - ET epinephrine 0.05–0.1 mg/kg while access obtained
-> - repeat epinephrine every 3–5 min if HR remains <60
-> - preductal SpO₂ = right hand/wrist.
-
-## C. Day 2 — RDS, Surfactant & Non-Invasive Respiratory Support
-
-| Feature | RDS | TTN | MAS | PPHN |
-|---|---|---|---|---|
-| Typical baby | Preterm | Term/late preterm, often elective CS | Term/post-term, meconium | Usually term; MAS/sepsis/asphyxia/CDH |
-| CXR | Low volume, ground-glass, air bronchograms | Hyperinflation, fissural fluid | Patchy/coarse + hyperinflation | May be relatively nonspecific |
-| Mechanism | Surfactant deficiency | Delayed lung-fluid clearance | Obstruction + pneumonitis + surfactant inactivation | Persistently high PVR |
-| Key move | CPAP/NRS ± surfactant | Supportive care | Support, oxygenation, selected surfactant | Echo + physiology-directed treatment |
-
-> **LATEST PROTOCOL UPDATE — EUROPEAN RDS CONSENSUS 2025**
-> For preterm infants: start NRS from birth if not requiring intubation; CPAP about 6–8 cm H₂O (or synchronized NIPPV where available). In infants >28 weeks with worsening RDS, a practical surfactant trigger is NRS MAP ≥6 cm H₂O with FiO₂ ≥0.30 or lung-ultrasound evidence. Thin-catheter/LISA is preferred for spontaneously breathing infants. If poractant alfa is used, 200 mg/kg initial dose is preferred. For <28 weeks receiving oxygen, target SpO₂ 90–94% with alarms around 89–95%.
-
-> **2025 DELIVERY-ROOM NUANCE**
-> European 2025 RDS guidance suggests starting FiO₂ by GA: 0.60 for <29 wk, ≥0.30 for 29–31 wk, and 0.21 for ≥32 wk, titrated by pulse oximetry. This is a European RDS recommendation; do not confuse it with general term-newborn NRP oxygen starts.
-
-## D. Day 3 — Mechanical Ventilation, ABG, BPD & Air Leak
-
-| Problem | Physiology | What changes it |
-|---|---|---|
-| Hypoxemia | Low alveolar O₂/recruitment or shunt | FiO₂ + MAP/PEEP, recruitment, treat pneumothorax/PPHN/hemodynamics |
-| Hypercapnia | Low effective minute ventilation | Increase effective VT/minute ventilation after ETT/circuit check |
-| Hypocapnia | Excess ventilation | Reduce ventilation; protect preterm brain |
-| HFOV oxygenation | Mean lung volume | MAP + FiO₂ |
-| HFOV ventilation | Oscillatory VT | Amplitude ΔP; lower frequency can increase CO₂ clearance |
-
-| Jensen BPD grade at 36 wk PMA | Respiratory support |
+| Day | Completed Neonatology topic |
 |---|---|
-| No BPD | No respiratory support |
-| Grade 1 | Nasal cannula ≤2 L/min |
-| Grade 2 | Nasal cannula >2 L/min OR non-invasive positive-pressure support |
-| Grade 3 | Invasive mechanical ventilation |
+| 1 | Neonatal Resuscitation |
+| 2 | RDS, surfactant, non-invasive respiratory support |
+| 3 | Mechanical ventilation, ABG, BPD, air leak |
+| 4 | Prematurity, ELBW/VLBW, thermoregulation, apnea, KMC |
+| 5 | Neonatal sepsis, meningitis, antibiotic stewardship |
+| 6 | Neonatal jaundice, phototherapy, exchange, hemolytic disease |
+| 7 | HIE, birth asphyxia, therapeutic hypothermia, seizures, aEEG/EEG |
+| 8 | NEC, preterm feeding, human milk, PN |
+| 9 | PDA, PPHN, neonatal hemodynamics |
+| 10 | Hypoglycemia, calcium/sodium, metabolic emergencies |
+| 11 | ROP, IVH/PHVD, PVL, neurodevelopmental follow-up |
+| 12 | Integrated Neonatology revision |
 
-> **PERSONALIZED AMBER FACT**
-> Jensen Grade 3 BPD at 36 weeks PMA = INVASIVE mechanical ventilation. CPAP/NIPPV is Grade 2. This is the active Day 5 knowledge-gap item; retain in R1/R2/R3 until fresh retrieval is stable.
+## 1. Neonatal Resuscitation [IAP primary exam framework + current AHA/AAP comparison]
 
-> **AIR-LEAK EMERGENCY**
-> Sudden desaturation + unilateral reduced breath sounds + hypotension/bradycardia in a ventilated neonate = tension pneumothorax until proven otherwise. If unstable, decompress before waiting for radiography.
+> **CORE CHAIN — WHAT → WHY → HOW → RECOGNIZE → WHAT NEXT**
+> - Most neonatal bradycardia is caused by inadequate ventilation/oxygenation; ventilation is therefore the center of newborn resuscitation.
+> - The best immediate evidence that PPV is effective is a rising heart rate.
+> - If HR remains <60/min despite effective PPV with chest movement, start 3:1 compressions; give epinephrine if severe bradycardia persists.
+> Source: Day 1 > Resuscitation
 
-## E. Day 4 — Prematurity, ELBW/VLBW, Thermoregulation & Apnea
-
-| Term | Definition |
-|---|---|
-| Preterm | <37 weeks |
-| Very preterm | <32 weeks |
-| Extremely preterm | <28 weeks |
-| LBW | <2500 g |
-| VLBW | <1500 g |
-| ELBW | <1000 g |
-
-> **THERMAL PROTECTION**
-> Heat loss = evaporation + convection + radiation + conduction. For very preterm infants use a warmed room, radiant warmer, polyethylene wrap/bag, hat/thermal mattress as appropriate, warmed humidified gases, and servo-controlled temperature monitoring.
-
-> **APNEA OF PREMATURITY**
-> AOP is a diagnosis of developmental respiratory-control immaturity after excluding sepsis, glucose/electrolyte disturbance, anemia, seizures, hypothermia and airway obstruction. Caffeine citrate: common exam dose loading 20 mg/kg, maintenance 5–10 mg/kg/day. Persistent apnea despite caffeine → reconsider diagnosis and escalate respiratory support.
-
-## F. Day 5 — Neonatal Sepsis, Meningitis & Antibiotic Principles
-
-| Feature | EOS | LOS |
+| Step / item | India-aligned anchor | International update / trap |
 |---|---|---|
-| Timing framework | First ~72 h in many exam frameworks | After ~72 h |
-| Acquisition | Vertical/peripartum | NICU/community/postnatal |
-| Classic organisms | GBS, E. coli; local variation | CoNS, S. aureus, Gram-negatives, Candida in high-risk infants |
-| Urine culture | Usually not routine in initial EOS | Important in LOS evaluation |
+| Breathing well | Skin-to-skin, dry/cover, delayed cord clamping ≥60 s, breastfeeding | If immediate resuscitation is needed, do not delay life-saving support. |
+| PPV indication | Apnea/gasping or HR <100 after initial steps; begin in the golden minute | AHA/AAP 2025 also uses HR <100 and ventilation within 60 s. |
+| PPV rate | IAP/NRP teaching: 40–60/min | AHA/AAP 2025: 30–60/min. |
+| Compressions | HR <60 after effective PPV; 3:1, two-thumb, lower third sternum | AHA/AAP 2025: use 100% O₂ during compressions, then titrate. |
+| Adrenaline IV | 1:10,000; 0.2 mL/kg common IAP anchor (range 0.1–0.3 mL/kg) | Equivalent 0.01–0.03 mg/kg; repeat q3–5 min. |
+| Adrenaline ET | 1:10,000; 1 mL/kg while vascular access is being obtained | AHA/AAP uses higher ET dose than IV. |
+| Volume | NS 10 mL/kg over 5–10 min if blood loss/shock suspected | Some international frameworks allow 10–20 mL/kg; use named framework. |
+| Preductal SpO₂ | Right hand/wrist | Use pulse oximetry to titrate oxygen. |
+| Stopping | IAP teaching: consider stopping if HR remains zero around 20 min after full resuscitation | Decision requires clinical context and family communication. |
+
+> **LATEST PROTOCOL / FRAMEWORK NOTE — Preterm starting oxygen**
+> - IAP 2022: 21–30% initial oxygen for preterm resuscitation.
+> - 2025 AHA/AAP: 32–35 weeks 21–30%; <32 weeks may need 30–100%, guided by pulse oximetry.
+> - Exam rule: if the stem says IAP, use IAP; if it says 2025 AHA/AAP/NRP 9th edition, use the newer international range.
+> Source/framework: IAP STG 2022 Neonatal Resuscitation; AHA/AAP 2025 Neonatal Resuscitation
+
+- Meconium: no routine tracheal suction solely for non-vigorous status; prioritize ventilation and suction/intubate only if obstruction prevents effective ventilation.
+- Intact cord milking should not be used in <28 weeks because of IVH risk; delayed cord clamping ≥60 s is preferred when immediate resuscitation is not required.
+- If chest movement is poor during PPV, correct mask seal, head position and airway patency before escalating.
+
+## 2. RDS, Surfactant and Non-invasive Respiratory Support [NNF India first]
+
+- RDS = surfactant deficiency + immature lung → low FRC, atelectasis, V/Q mismatch and increased work of breathing.
+- CPAP preserves FRC; surfactant lowers surface tension. They are complementary.
+- NNF: all preterm neonates with respiratory distress should receive CPAP early where appropriate and safely monitored.
+
+| NNF India point | Exam anchor |
+|---|---|
+| Primary support | Bubble CPAP preferred; NIPPV may be used where expertise/equipment exist. |
+| Initial CPAP pressure | 5 cm H₂O for RDS. |
+| Post-extubation VLBW | ≥6 cm H₂O may be used; NIPPV often useful in higher-risk infants. |
+| HFNC | Not recommended by NNF as primary support for preterm infants with or at risk of RDS. |
+| Apnea of prematurity | CPAP + methylxanthine; NIPPV for frequent severe apnea where expertise exists. |
+| Weaning CPAP | NNF favors sudden discontinuation rather than cycling. |
+
+> **LATEST PROTOCOL / FRAMEWORK NOTE — European RDS 2025 comparison**
+> - European Consensus 2025 recommends nasal CPAP 6–8 cm H₂O or synchronized NIPPV as primary NRS.
+> - For infants >28 weeks with worsening RDS, a suggested surfactant protocol is MAP ≥6 cm H₂O and FiO₂ ≥0.30, or lung ultrasound evidence.
+> - Thin-catheter surfactant is preferred in spontaneously breathing preterm infants where expertise exists.
+> - Poractant alfa 200 mg/kg initial dose is preferred over 100 mg/kg.
+> Source/framework: European Consensus Guidelines on RDS 2025 (published 2026)
+
+## 3. Mechanical Ventilation, ABG, BPD and Air Leak
+
+| Problem | Main determinant | Lever | Trap |
+|---|---|---|---|
+| Hypoxemia | FiO₂ + mean airway pressure/recruitment | FiO₂, PEEP/MAP, recruitment | Raising rate alone does not fix oxygenation. |
+| Hypercapnia | Minute ventilation | Tidal volume/PIP, rate, dead space | Over-correction → hypocapnia → brain-injury risk. |
+| Sudden deterioration | DOPE | Displacement, Obstruction, Pneumothorax, Equipment | Circuit disconnection = Equipment failure. |
+| Tension pneumothorax | Air leak | Emergency decompression if unstable | Do not wait for X-ray. |
+
+> **ABG / OI rapid formulas**
+> - ABG chain: pH → primary process → expected compensation → anion gap if metabolic acidosis → relate to infant and ventilator.
+> - OI = MAP × FiO₂ (%) ÷ PaO₂ = MAP × FiO₂ fraction ×100 ÷ PaO₂.
+> Source: Day 3/5 > ABG
+
+> **Jensen BPD at 36 weeks PMA**
+> - Grade 1: nasal cannula ≤2 L/min.
+> - Grade 2: nasal cannula >2 L/min or non-invasive positive-pressure support.
+> - Grade 3: invasive mechanical ventilation.
+> Source: Error Notebook > ERR-D5-Q53
+
+> **DOPE personal trap**
+> - Disconnected ventilator circuit = Equipment failure, not tube displacement.
+> Source: Error Notebook > ERR-D5-Q34
+
+## 4. Prematurity, Thermoregulation, Apnea and KMC
+
+- ELBW <1000 g; VLBW <1500 g; LBW <2500 g. Extremely preterm <28 weeks; very preterm 28–<32 weeks.
+- Heat loss: evaporation, convection, radiation, conduction.
+- Apnea of prematurity is a diagnosis of exclusion: sepsis, hypoglycemia, anemia, seizure, obstruction, temperature instability, PDA/NEC and drugs must be reconsidered.
+- Caffeine citrate: 20 mg/kg loading; 5–10 mg/kg/day maintenance is a common exam anchor.
+- WHO supports early/immediate KMC for preterm/LBW infants where feasible.
+
+## 5. Neonatal Sepsis, Meningitis and Antibiotic Stewardship [ICMR/NNF]
 
 > **DIAGNOSTIC LOGIC**
-> Blood culture is the cornerstone of bacteremic sepsis diagnosis. CBC is neither sensitive nor specific enough to rule in/out sepsis alone. CRP rises late; serial normal inflammatory markers can support stopping therapy in a clinically reassuring infant. Procalcitonin has a physiologic early neonatal rise.
+> - Blood culture with adequate volume is the cornerstone before antibiotics when feasible.
+> - CBC and CRP/PCT are adjuncts; a single normal biomarker does not exclude early sepsis.
+> - LP should be done when indicated and the infant is stable; never delay treatment of shock to complete LP.
+> - Empiric antibiotics should follow the local antibiogram; narrow/stop promptly when cultures and clinical course allow.
+> Source: Day 5 > Sepsis
 
-> **LP RULE**
-> Perform LP when meningitis is suspected, blood culture is positive in a concerning context, neurologic signs/seizures are present, or response is poor — provided the infant is stable enough. Do not destabilize a shocked infant merely to obtain CSF before antibiotics.
-
-> **STEWARDSHIP**
-> Obtain cultures before antibiotics if this does not delay urgent therapy. In current AAP EOS frameworks, if cultures stay sterile, the infant is clinically well and there is no focal infection, reassess and usually stop empiric antibiotics by ~36–48 h rather than continuing for an isolated abnormal CBC/CRP.
-
-## G. Day 6 — Neonatal Jaundice, Phototherapy, Exchange & Hemolysis
-
-| Decision variable | High-yield rule |
+| Condition / review | ICMR/NNF-derived duration or action |
 |---|---|
-| Age | Always use postnatal age in HOURS |
-| GA | AAP 2022 treatment graphs apply to ≥35 wk |
-| TcB | If within 3 mg/dL of phototherapy threshold or ≥15 mg/dL → obtain TSB |
-| Rapid rise | ≥0.3 mg/dL/h in first 24 h; ≥0.2 mg/dL/h thereafter suggests hemolysis |
-| Neurotoxicity risks | Albumin <3.0 g/dL, isoimmune hemolysis, G6PD/other hemolysis, sepsis, recent instability |
-| Escalation | 2 mg/dL below exchange threshold |
-| During escalation | TSB at least every 2 h |
-| Phototherapy spectrum | Blue-green ~460–490 nm; intensive irradiance ≥30 µW/cm²/nm in term infants |
+| Pneumonia | 5–7 days |
+| Clinical sepsis, sterile culture, normal CSF | 5–7 days when ongoing treatment is justified |
+| Blood-culture-positive sepsis | 10–14 days |
+| CSF suggestive of meningitis | 21 days in the ICMR workflow |
+| Review | Reassess at 48 h; if continued, review again around day 5; use culture/clinical status and biomarkers for stewardship. |
 
-> **AAP BILIRUBIN TRAP**
-> Do NOT subtract direct bilirubin from total bilirubin before applying AAP treatment thresholds. Intermediate/advanced acute bilirubin encephalopathy is an urgent exchange indication even if the current TSB is slightly below the numeric exchange line or falling.
+- Ceftriaxone is generally avoided in neonates because of bilirubin displacement and calcium-precipitation concerns.
+- Do not import tertiary international antibiotic regimens into an Indian unit without local resistance context.
 
-> **IVIG**
-> AAP 2022: in DAT-positive isoimmune hemolysis when TSB reaches/exceeds the escalation threshold, IVIG 0.5–1 g/kg over 2 h may be considered and may be repeated in 12 h. Benefit is uncertain and exchange readiness must continue. Do not blend this with NICE criteria.
+## 6. Hyperbilirubinemia, Hemolysis, Phototherapy and Exchange [NNF India + AAP-labelled comparison]
 
-## H. Day 7 — HIE, Birth Asphyxia, Therapeutic Hypothermia & Neonatal Seizures
+| Decision | NNF India exam anchor |
+|---|---|
+| Which chart? | ≥35 wk: AAP- or NICE-based chart; <35 wk: Maisels operational thresholds or NICE. Never mix charts. |
+| TcB | If TcB is within ~2.9 mg/dL (50 µmol/L) of the phototherapy threshold → obtain TSB. |
+| Phototherapy | Intensive phototherapy; optimize irradiance/exposure. Routine prophylactic phototherapy for ABO/Rh incompatibility is not recommended. |
+| Stopping | NNF: stop when TSB is ≥2.9 mg/dL below treatment threshold; haemolytic cases need closer rebound assessment. |
+| IVIG | NNF: not recommended routinely for alloimmune hemolytic disease; AAP 2022 differs in selected escalation scenarios. |
+| Exchange | No albumin priming; never delay exchange for acute bilirubin encephalopathy. |
 
-| Domain | Moderate HIE | Severe HIE |
+> **LATEST PROTOCOL / FRAMEWORK NOTE — AAP 2022 hyperbilirubinemia**
+> - AAP 2022 uses hour-specific thresholds by gestational age and neurotoxicity risk factors for infants ≥35 weeks.
+> - AAP allows IVIG in selected isoimmune hemolytic disease near escalation-of-care threshold; this differs from the NNF recommendation. Label the framework.
+> Source/framework: AAP 2022 Hyperbilirubinemia CPG
+
+> **Personal hemolysis trap**
+> - G6PD deficiency can cause severe unconjugated hyperbilirubinemia with a negative DAT.
+> - DAT-negative does not mean 'no hemolysis'.
+> Source: Error Notebook > ERR-D6-Q60
+
+## 7. HIE, Therapeutic Hypothermia, Seizures and EEG
+
+> **INDIA-SPECIFIC TH FRAMEWORK**
+> - NNF India 2021 reviewed HELIX and did not simply declare cooling universally beneficial or universally prohibited.
+> - NNF recommends TH only in high-quality level III/IV NICUs with appropriate monitoring, expertise and follow-up.
+> - NNF eligibility: >36 weeks, <6 h of age, admission temperature 36–37.4°C, biochemical/perinatal criteria plus moderate/severe encephalopathy; written consent and cardiorespiratory stability are important.
+> - HELIX remains a major LMIC evidence caveat because the trial did not show improved death/disability and showed increased mortality before discharge in the cooled group.
+> Source: Day 7 > HIE / NNF India TH Position Statement 2021
+
+> **LATEST PROTOCOL / FRAMEWORK NOTE — AAP 2026 high-income framework**
+> - Therapeutic hypothermia 33.5–34.5°C, initiated within 6 h and continued 72 h, reduces death/disability in moderate-to-severe HIE at ≥36 weeks in high-income settings.
+> - 35+0 to 35+6 weeks may be considered individually; <35 weeks not recommended; mild HIE is not routinely cooled.
+> - Do not silently substitute the AAP framework for the India/LMIC framework when a stem specifies India.
+> Source/framework: AAP Clinical Report 2026
+
+> **Seizure discriminator**
+> - aEEG trend can suggest seizures, but evolving raw EEG ictal activity is the decisive discriminator from artifact.
+> - Correct hypoglycemia, hypocalcemia and hypomagnesemia in parallel with seizure management.
+> - Phenobarbital 20 mg/kg IV remains a common first-line neonatal seizure loading dose in standard guidance.
+> Source: Error Notebook > ERR-D7-Q34
+
+## 8. NEC, Preterm Feeding, Human Milk and Parenteral Nutrition
+
+| Domain | High-yield point |
+|---|---|
+| NEC classic X-ray | Pneumatosis intestinalis |
+| Supporting sign | Portal venous gas |
+| Perforation | Pneumoperitoneum / free air |
+| Management | NPO, decompression, stabilization, antibiotics per local protocol, serial exams/imaging, surgical review when indicated |
+| Preferred milk | Mother’s own milk |
+| If MOM unavailable | Pasteurized donor human milk when available for high-risk VLBW infants |
+| Fortification | Often required for VLBW to meet protein/mineral needs |
+| PN risks | CLABSI, cholestasis, metabolic bone disease |
+
+> **LATEST PROTOCOL / FRAMEWORK NOTE — VLBW human milk 2026**
+> - AAP 2026: appropriately fortified mother’s own milk is optimal.
+> - Pasteurized donor human milk is recommended when MOM is unavailable, insufficient or contraindicated and can be continued until NEC risk is low (~34–36 weeks PMA).
+> Source/framework: AAP Clinical Report 2026
+
+> **Personal nutrition correction**
+> - Preterm energy/protein targets are ranges, not a single cut-off.
+> - 125 kcal/kg/day and 3.8 g/kg/day protein fall within commonly used targets for many preterm infants.
+> Source: Error Notebook > ERR-D8-Q41
+
+## 9. PDA, PPHN and Neonatal Hemodynamics
+
+| Topic | Exam anchor |
+|---|---|
+| PDA significance | Echo + clinical hemodynamics; ductal patency alone ≠ treatment indication. |
+| Ibuprofen | 10 mg/kg then 5 mg/kg at 24 and 48 h. |
+| COX inhibitor cautions | Renal dysfunction/oliguria, active NEC, significant bleeding/coagulopathy, duct-dependent CHD. |
+| Right-to-left ductus | Define PPHN/duct-dependent CHD physiology before closure. |
+| PPHN | Labile hypoxemia; pre/postductal difference can help; echo assesses shunt, RV pressure/function and structural CHD. |
+| iNO | International common anchor: ~20 ppm in appropriate echo-supported PPHN; exact escalation depends on severity and unit protocol. |
+
+> **LATEST PROTOCOL / FRAMEWORK NOTE — PDA 2025**
+> - AAP 2025 emphasizes echocardiographic confirmation and individualized management; routine early treatment of all preterm PDAs has not consistently improved major outcomes.
+> - Expectant management is appropriate for many stable infants.
+> Source/framework: AAP Clinical Report 2025
+
+## 10. Hypoglycemia, Calcium/Sodium and Metabolic Emergencies [IAP]
+
+| IAP operational threshold | Action level |
+|---|---|
+| Symptomatic | <40 mg/dL → treat; severe symptomatic low values require IV glucose. |
+| Asymptomatic <4 h | 25 mg/dL |
+| Asymptomatic 4–24 h | 35 mg/dL |
+| Asymptomatic 24–48 h | 45 mg/dL |
+| Asymptomatic >48 h | 60 mg/dL |
+
+- IAP: symptomatic infant with glucose <25 mg/dL — D10 bolus 1–2 mL/kg then infusion, usually starting GIR 5–8 mg/kg/min; recheck promptly.
+- GIR (mg/kg/min) = dextrose % × mL/kg/day ÷144.
+- Required dextrose % = GIR ×144 ÷ fluid rate (mL/kg/day).
+- Persistent/recurrent hypoglycemia or unusually high GIR requirement → obtain critical sample and investigate hyperinsulinism/endocrine/metabolic causes.
+
+> **Personal traps**
+> - CPS vs PES: do not swap the 72-hour CPS transitional framework with the PES persistent-hypoglycemia evaluation framework after 48 h.
+> - Early newborn physiology includes extracellular-fluid contraction, diuresis and natriuresis; individualize sodium/fluid therapy.
+> - Hyperinsulinism: suppressed BOHB + suppressed FFA + glucose rise ≥30 mg/dL after glucagon can support excess insulin action even if insulin is not measurable.
+> - OTC vs CPS1: urine orotic acid high in OTC, low/normal in CPS1.
+> Source: ERR-D10-Q8 / Q15 / Q47 / Q50 + Day 12 retest concepts
+
+## 11. ROP, IVH/PHVD, PVL and Neurodevelopmental Follow-up [NNF India]
+
+| NNF ROP item | India-aligned rule |
+|---|---|
+| Who to screen | GA <34 wk; or BW <2000 g if GA unknown; or 34–36 wk with relevant risk factor / unstable course. |
+| First screen | 4 weeks postnatal age; <28 wk or BW <1200 g → 2–3 weeks. |
+| Anti-VEGF | NNF 2020: bevacizumab may be used for type 1 zone 1 ROP; not recommended for zone 2 in that guideline. |
+| Follow-up after treatment | Continue retinal surveillance to at least 65 weeks PMA; longer as clinically indicated. |
+| Pain relief | Topical anesthetic + sucrose/dextrose and non-pharmacologic comfort measures; monitor unstable infants closely. |
+
+- ROP stages: 1 line; 2 ridge; 3 extraretinal fibrovascular proliferation; 4 partial detachment; 5 total detachment.
+- Plus disease = posterior vascular dilation/tortuosity.
+- Do not apply narrower AAP US screening criteria to an Indian NNF-framed question.
+
+| Neuroimaging point | Anchor |
+|---|---|
+| IVH grade I | Germinal-matrix hemorrhage / caudothalamic groove |
+| Grade II | IVH without ventricular dilation |
+| Grade III | IVH with ventricular dilation |
+| PVHI | Know older Papile 'grade IV' language, but modern Volpe framework treats PVHI as venous infarction, not simple IVH extension. |
+| PHVD | Act on serial ultrasound ventricular measurements before late pressure signs such as bulging fontanelle. |
+| PVL | Periventricular white-matter injury; cysts may appear later; MRI is more sensitive for noncystic injury. |
+
+## 12. Major Algorithms — numbering restarts from 1 in each algorithm
+
+> **Algorithm A — Resuscitation**
+> 1. Assess term/tone/breathing.
+> 2. Initial thermal/airway steps.
+> 3. PPV for apnea/gasping or HR <100.
+> 4. Optimize ventilation if HR not rising.
+> 5. Compressions for HR <60 after effective PPV.
+> 6. Epinephrine if HR remains <60 despite effective ventilation + compressions.
+> 7. Search reversible causes including blood loss and pneumothorax.
+
+> **Algorithm B — RDS [NNF-first]**
+> 1. Recognize RDS and exclude major alternative causes.
+> 2. Start bubble CPAP; NNF initial pressure 5 cm H₂O.
+> 3. Assess work of breathing, oxygen need, apnea and failure signs.
+> 4. Use NIPPV when indicated/available; HFNC is not NNF primary support for RDS.
+> 5. If surfactant is indicated, follow the named guideline/protocol; thin-catheter technique where expertise exists.
+> 6. Escalate to invasive ventilation only when non-invasive support fails.
+
+> **Algorithm C — HIE / TH [India]**
+> 1. Confirm neonatal encephalopathy and obtain early perinatal/gas data.
+> 2. Assess moderate/severe HIE and NNF India eligibility.
+> 3. Ensure center quality, monitoring, consent and cardiorespiratory stability.
+> 4. If eligible, start cooling before 6 h using controlled protocol.
+> 5. Use EEG/aEEG monitoring, treat seizures and metabolic disturbances.
+> 6. Plan MRI and long-term neurodevelopmental follow-up.
+
+> **Algorithm D — NEC**
+> 1. Stop feeds; decompress stomach.
+> 2. Stabilize airway/breathing/circulation.
+> 3. Culture/labs/imaging and antibiotics per unit policy.
+> 4. Serial abdominal examinations + X-rays/ultrasound as appropriate.
+> 5. Surgical review for perforation/fixed loop/deterioration.
+> 6. Restart nutrition cautiously after recovery, prioritizing human milk.
+
+> **Algorithm E — PPHN**
+> 1. Recognize labile hypoxemia / pre-postductal pattern.
+> 2. Optimize lung recruitment and ventilation.
+> 3. Correct acidosis, glucose, calcium, temperature and perfusion.
+> 4. Echo to exclude CHD and define RV/LV/shunt physiology.
+> 5. Use pulmonary vasodilator/inotropic strategy according to phenotype.
+> 6. Escalate support or ECMO referral where indicated and available.
+
+> **Algorithm F — Persistent Hypoglycemia**
+> 1. Confirm low plasma glucose and treat immediate danger.
+> 2. Calculate and titrate GIR.
+> 3. If recurrent/persistent, obtain critical sample during hypoglycemia.
+> 4. Assess ketones, FFA, insulin, cortisol, GH, ammonia/lactate and related tests as indicated.
+> 5. Use glucagon response when hyperinsulinism is suspected.
+> 6. Differentiate hyperinsulinism from endocrine and metabolic causes.
+
+## 13. High-Yield Close Differentials and Discriminators
+
+| A | B | Decisive discriminator |
 |---|---|---|
-| Consciousness | Lethargy | Stupor/coma |
-| Tone | Hypotonia | Flaccid |
-| Suck/Moro | Weak | Absent |
-| Seizures | May occur | Often occur/electrographic |
-| Respiration | Variable | Apnea/severe dysfunction |
+| RDS | TTN | Prematurity + reticulogranular/air bronchograms vs hyperinflation/perihilar streaking/fluid in fissures. |
+| RDS | MAS | MAS: term/post-term + meconium + coarse patchy opacities/hyperinflation. |
+| AOP | Secondary apnea | AOP only after exclusion of sepsis, glucose, anemia, seizure, obstruction, temperature causes. |
+| Immune hemolysis | G6PD | DAT may be positive in immune hemolysis; G6PD can be DAT-negative. |
+| HIE seizure | Jitteriness/artifact | Evolving raw EEG ictal correlate. |
+| PDA | PPHN | L→R after PVR falls vs R→L/bidirectional with high PVR/labile hypoxemia. |
+| Hyperinsulinism | FAOD | Ketones + FFA suppressed in hyperinsulinism vs high FFA with low ketones in FAOD. |
+| OTC | CPS1 | Urine orotic acid high vs low/normal. |
+| IVH | PVL | Hemorrhage vs white-matter injury. |
+| ROP stage 1 | Stage 2 | Demarcation line vs elevated ridge. |
 
-> **LATEST PROTOCOL UPDATE — AAP 2026 THERAPEUTIC HYPOTHERMIA**
-> Best-established benefit is for neonates with moderate-to-severe HIE born at ≥36 0/7 weeks. Target 33.5–34.5°C, begin within 6 h when possible, continue 72 h, then controlled rewarming. Infants 35+0 to 35+6 weeks require individualized consideration because evidence is limited; routine cooling for mild HIE remains unsupported. Cooling does not by itself prove that hypoxia-ischemia caused encephalopathy.
+## 14. 35 Ultra-High-Yield Pearls
 
-> **LATEST PROTOCOL UPDATE — ILAE 2023 NEONATAL SEIZURES**
-> EEG is required for reliable seizure diagnosis. Phenobarbital is first-line ASM for seizures requiring treatment regardless of etiology unless a channelopathy is likely. Second-line options include phenytoin/fosphenytoin, levetiracetam, midazolam or lidocaine; levetiracetam may be favored with cardiac disease. After acute provoked seizures stop and there is no neonatal-onset epilepsy, discontinue ASM before discharge rather than maintaining it solely because MRI/EEG remains abnormal.
-
-> **SEIZURE SEQUENCE**
-> ABC + glucose → correct severe metabolic trigger → continuous EEG/video EEG if available (aEEG for trend/triage) → antiseizure therapy → confirm electrographic seizure control → MRI/etiology-specific work-up → neurodevelopmental follow-up.
-
-## I. Day 8 — NEC, Preterm Feeding, Human Milk & Parenteral Nutrition
-
-| NEC clue | Meaning |
-|---|---|
-| Feeding intolerance + distension | Early/nonspecific |
-| Bloody stool + tenderness/discoloration | Progressive bowel injury |
-| Pneumatosis intestinalis | Classic radiographic NEC sign |
-| Portal venous gas | Supports NEC |
-| Free intraperitoneal air | Perforation → major surgical indication |
-| Shock/DIC/fixed dilated loop | Severe disease; early surgical involvement |
-
-> **MANAGEMENT BUNDLE**
-> - Stop enteral feeds
-> - gastric decompression
-> - blood cultures
-> - broad-spectrum antibiotics per local microbiology
-> - IV fluids/perfusion support
-> - PN
-> - serial abdominal exam/labs/imaging
-> - early surgery for perforation, peritonitis, necrotic bowel or deterioration.
-
-> **NUTRITION PROTOCOL ANCHOR — ESPGHAN**
-> Mother’s own milk is preferred; donor human milk is generally preferred over formula when maternal milk is insufficient for high-risk preterm infants, where available. VLBW infants usually require fortification to meet protein/mineral needs. Standardized feeding protocols and appropriate advancement reduce unwarranted fasting/variation; prolonged fasting does not prevent NEC.
-
-## J. Day 9 — PDA, PPHN & Neonatal Hemodynamics
-
-| hsPDA phenotype | Examples |
-|---|---|
-| Pulmonary overcirculation | Rising ventilator/O₂ need, pulmonary edema, LA/LV volume loading |
-| Systemic steal | Low diastolic BP/wide pulse pressure, oliguria, feeding intolerance, absent/reversed systemic diastolic flow |
-| Echo | Ductal size/flow + LA:Ao + LV loading + systemic flow; no single number alone defines hsPDA |
-
-> **LATEST PROTOCOL UPDATE — AAP PDA 2025**
-> Echocardiography is essential for confirmation and hemodynamic assessment. Prophylactic or routine early (<2 weeks) medical closure has not shown benefit over expectant management and is not recommended. If a truly hemodynamically significant PDA is treated, ibuprofen or acetaminophen are options; intervention is individualized to physiology and trajectory rather than ductal patency alone.
-
-> **PDA PHARMACOLOGY PEARL**
-> Common ibuprofen regimen: 10 mg/kg then 5 mg/kg at 24 h and 48 h. Major COX-inhibitor cautions: renal dysfunction/oliguria, active NEC/significant bowel disease, significant bleeding/coagulopathy/thrombocytopenia, and duct-dependent CHD.
-
-> **PPHN PHYSIOLOGY**
-> Persistently high PVR → right-to-left shunt at ductus/foramen ovale → labile hypoxemia. Optimize lung recruitment, oxygenation/ventilation, systemic perfusion/BP and acid-base state; use echo to assess shunts and exclude CHD before targeted pulmonary vasodilation.
-
-## K. Day 10 — Hypoglycemia, Calcium, Sodium & Metabolic Problems
-
-> **HYPOGLYCEMIA PRINCIPLE**
-> There is no single universal neonatal glucose treatment threshold across all guidelines. Symptomatic hypoglycemia is an emergency; verify glucose and treat promptly. Persistent/recurrent hypoglycemia beyond the transitional period should trigger evaluation for hyperinsulinism, endocrine deficiency or metabolic disease.
-
-| Problem | Key clues | Core move |
-|---|---|---|
-| Hypoglycemia | Jitteriness, apnea, poor feeding, seizures | Check glucose early; enteral/IV glucose by severity |
-| Hypocalcemia | Jitteriness, apnea, stridor, seizures | Ionized Ca preferred physiologically; check Mg if refractory |
-| Hyponatremia | Water excess, renal salt loss, SIADH/adrenal | Assess volume + urine studies; correct cause, avoid rapid overcorrection |
-| Hypernatremia | Insufficient intake/dehydration or excess Na | Calculate water deficit; correct slowly |
-| Metabolic acidosis | Shock/sepsis/hypoxia/renal/GI/IEM | Treat cause; bicarbonate is not reflex therapy |
-
-## L. Day 11 — ROP, IVH, PVL & Neurodevelopmental Follow-Up
-
-> **ROP SCREENING**
-> AAP/AAO/AAPOS U.S. screening framework: screen infants with BW ≤1500 g or GA ≤30 wk and selected larger/older infants with an unstable clinical course judged high risk. Timing and follow-up depend on GA/postmenstrual age and retinal findings. ROP is classified by zone, stage and plus disease.
-
-> **ROP TRAP**
-> Treatment is based on disease severity/type and timely ophthalmology follow-up, not oxygen history alone. Anti-VEGF and laser each have indications/limitations; anti-VEGF requires prolonged surveillance for late recurrence.
-
-| Brain injury | Core concept | Imaging/clinical clue |
-|---|---|---|
-| IVH | Fragile germinal-matrix vasculature + cerebral-flow instability | US: germinal matrix/intraventricular blood; Grade III has ventricular dilation |
-| PVHI | Venous infarction associated with severe IVH | Do not call it simply “grade IV extension” |
-| PVL | Preterm white-matter injury | Cystic lesions on US; diffuse non-cystic injury better seen on MRI |
-
-> **FOLLOW-UP**
-> Track growth, tone/motor asymmetry, feeding, hearing, vision, language/cognition and family needs. Use corrected age for early developmental assessment according to follow-up program; early-intervention referral is part of neonatal care.
-
-## M. Integrated Decision Algorithms
-
-> **ALGORITHM 1 — DELIVERY-ROOM BRADYCARDIA**
-> 1. Initial steps and HR assessment.
-> 2. If apnea/gasping or HR <100 → PPV.
-> 3. Confirm chest movement and rising HR; perform ventilation corrective steps if HR does not rise.
-> 4. If HR <60 after ~30 s effective ventilation → advanced airway + 3:1 compressions + 100% O₂.
-> 5. If HR remains <60 → intravascular epinephrine; consider volume if blood loss suspected.
-
-> **ALGORITHM 2 — WORSENING PRETERM RDS ON CPAP**
-> 1. Confirm RDS vs TTN/MAS/pneumothorax/sepsis.
-> 2. Optimize interface, CPAP/NIPPV and temperature.
-> 3. Assess FiO₂, work of breathing and lung ultrasound/CXR.
-> 4. If >28 wk with MAP ≥6 and FiO₂ ≥0.30 or ultrasound suggests surfactant need → early surfactant.
-> 5. Prefer thin-catheter/LISA if spontaneously breathing; MV only when needed, using lung-protective strategy.
-
-> **ALGORITHM 3 — HYPERCAPNIA ON VENTILATION**
-> 1. Look at infant and confirm gas.
-> 2. Check ETT position/patency, secretions, leak and circuit.
-> 3. Assess delivered VT/chest movement.
-> 4. Increase effective minute ventilation with smallest physiologically appropriate change.
-> 5. Recheck gas and avoid overshoot hypocapnia.
-
-> **ALGORITHM 4 — EARLY NEONATAL SEPSIS**
-> 1. Stabilize ABC/glucose/perfusion.
-> 2. Obtain blood culture (and other cultures/LP when indicated and safe) before antibiotics if no delay.
-> 3. Start empiric antibiotics based on age/risk/local flora.
-> 4. Reassess at 24–48 h using culture + clinical course, not isolated CBC/CRP.
-> 5. Narrow/stop therapy promptly when evidence does not support infection.
-
-> **ALGORITHM 5 — SEVERE JAUNDICE**
-> 1. GA + exact age in hours + TSB + neurotoxicity risks.
-> 2. Determine rate of rise and hemolysis signs.
-> 3. At phototherapy threshold → intensive phototherapy.
-> 4. At escalation threshold (2 mg/dL below exchange) → emergency escalation + q2h TSB + exchange readiness.
-> 5. At exchange threshold OR intermediate/advanced ABE → urgent exchange.
-
-> **ALGORITHM 6 — POSSIBLE HIE**
-> 1. Confirm neonatal encephalopathy and perinatal hypoxic-ischemic context while considering mimics.
-> 2. Perform standardized neurologic staging; obtain blood gas/labs.
-> 3. If moderate/severe and within window → cooling eligibility pathway; avoid hyperthermia.
-> 4. Continuous EEG/aEEG; treat electrographic seizures.
-> 5. MRI + organ-injury assessment + structured neurodevelopmental follow-up.
-
-> **ALGORITHM 7 — NEC**
-> 1. Stop feeds and decompress stomach.
-> 2. Cultures/labs + broad-spectrum antibiotics.
-> 3. IV fluids/perfusion support + PN.
-> 4. Serial abdominal exam + imaging.
-> 5. Surgery early for perforation/peritonitis/necrotic bowel/deterioration.
-
-> **ALGORITHM 8 — SUSPECTED HSPDA**
-> 1. Confirm PDA by echo and assess shunt significance/systemic steal.
-> 2. Optimize respiratory/hemodynamic/nutrition care.
-> 3. Avoid prophylactic/routine early closure in stable infants.
-> 4. If persistent hsPDA with clinical consequences → consider targeted ibuprofen/acetaminophen.
-> 5. If persistent symptomatic PDA despite/contraindication → transcatheter/surgical evaluation.
-
-> **ALGORITHM 9 — JITTERY OR SEIZING NEONATE**
-> 1. Check bedside glucose immediately.
-> 2. Check Ca/Mg/Na and temperature; review sepsis risk.
-> 3. Obtain EEG if seizure suspected; distinguish jitteriness from electrographic seizure.
-> 4. Treat metabolic trigger and use neonatal ASM protocol.
-> 5. Image/work up HIE, stroke, hemorrhage, infection, metabolic/genetic disease as indicated.
-
-> **ALGORITHM 10 — PRETERM NEUROPROTECTION**
-> 1. Antenatal steroids and careful delivery-room transition.
-> 2. Avoid hypothermia, large PaCO₂/BP swings and unnecessary invasive ventilation.
-> 3. Use IVH-prevention handling/hemodynamic bundles per unit practice.
-> 4. Screen brain/eyes/hearing on schedule.
-> 5. Ensure corrected-age developmental follow-up and early intervention.
-
-## N. Must-Know Numbers, Doses, Cutoffs & Timings
-
-| Item | High-yield value |
-|---|---|
-| PPV | 40–60/min |
-| Chest compressions | HR <60 after ~30 s effective ventilation |
-| Compression:ventilation | 3:1 |
-| IV/UVC epinephrine | 0.01–0.03 mg/kg; repeat q3–5 min if needed |
-| ET epinephrine | 0.05–0.1 mg/kg while vascular access obtained |
-| DCC | ≥60 s for most eligible stable newborns |
-| Preterm CPAP | ~6–8 cm H₂O |
-| RDS surfactant trigger (>28 wk, European 2025) | NRS MAP ≥6 + FiO₂ ≥0.30 OR lung US evidence |
-| Poractant alfa initial dose | 200 mg/kg preferred |
-| SpO₂ target <28 wk on O₂ (European RDS) | 90–94%; alarms ~89–95% |
-| Caffeine citrate | 20 mg/kg load; 5–10 mg/kg/day maintenance |
-| Blood culture volume | ~1 mL improves sensitivity |
-| EOS sterile culture checkpoint | ~36–48 h reassessment/stop if well and no focal infection |
-| Jaundice rate <24 h | ≥0.3 mg/dL/h suggests hemolysis |
-| Jaundice rate ≥24 h | ≥0.2 mg/dL/h suggests hemolysis |
-| Albumin neurotoxicity risk | <3.0 g/dL |
-| AAP escalation threshold | 2 mg/dL below exchange line |
-| Escalation monitoring | TSB at least q2h |
-| Intensive phototherapy | ~460–490 nm; ≥30 µW/cm²/nm in term infants |
-| AAP IVIG | 0.5–1 g/kg over 2 h; may repeat in 12 h in appropriate DAT+ isoimmune disease |
-| Therapeutic hypothermia | ≥36 wk evidence base; start ≤6 h; 33.5–34.5°C; 72 h |
-| Phenobarbital neonatal seizures | 20 mg/kg IV load; additional 10–20 mg/kg if required |
-| Ibuprofen PDA | 10 mg/kg, then 5 mg/kg at 24 and 48 h |
-| ROP U.S. screening group | BW ≤1500 g or GA ≤30 wk; selected larger/older high-risk infants |
-
-## O. Image / Data / Monitor Pattern Recognition
-
-| Pattern | Interpretation / next-step cue |
-|---|---|
-| CXR: low volume + ground glass + air bronchograms | RDS |
-| CXR: hyperinflation + fissural fluid | TTN |
-| CXR: coarse patchy infiltrates + hyperinflation | MAS |
-| Sudden unilateral absent breath sounds + collapse | Tension pneumothorax |
-| ABG low pH + high PaCO₂ | Primary respiratory acidosis |
-| aEEG/EEG electrographic seizure without clinical correlate | Treat seizure burden; clinical observation alone underestimates seizures |
-| Abdominal X-ray pneumatosis intestinalis | NEC |
-| Free intraperitoneal air | Perforated NEC → surgery |
-| Echo left-to-right PDA + LA/LV loading + systemic diastolic flow reversal | Hemodynamically important PDA phenotype |
-| Preductal > postductal SpO₂ with labile hypoxemia | Supports PPHN right-to-left ductal shunt |
-| Cranial US Grade III IVH | Intraventricular blood + ventricular dilation |
-| MRI basal ganglia/thalamus injury after acute profound insult | HIE pattern; integrate with clinical course |
-| ROP zone/stage/plus disease | Determines follow-up/treatment urgency |
-
-## P. Calculation Formula Box
-
-| Calculation | Formula / method | Trap |
-|---|---|---|
-| Oxygenation index | OI = FiO₂ × MAP × 100 / PaO₂ | Use FiO₂ as fraction, not percent. |
-| GIR | mg/kg/min = [Dextrose (g/100 mL) × mL/kg/day × 0.694] / 100 | Know unit conversion; review infusion rate carefully. |
-| Sodium deficit | Na deficit ≈ (desired Na − measured Na) × TBW factor × weight | Correct chronic disorders slowly; use neonatal-specific TBW and local protocol. |
-| Free-water deficit | TBW × [(measured Na / desired Na) − 1] | Avoid rapid correction of hypernatremia. |
-| Rate of bilirubin rise | ΔTSB / Δhours | First 24 h ≥0.3 mg/dL/h; after 24 h ≥0.2 suggests hemolysis. |
-| Corrected age | Chronologic age − weeks born before 40 wk | Use for developmental interpretation in preterm follow-up. |
-
-## Q. 40 Ultra-High-Yield Pearls
-
-- Rising heart rate is the best immediate sign of effective PPV.
-- Most neonatal bradycardia is ventilation failure until proven otherwise.
-- Do not start compressions for HR 70; fix ventilation.
+- Rising HR is the best immediate sign of effective PPV.
+- Fix ventilation before chest compressions in most newborn bradycardia.
+- IAP PPV 40–60/min; AHA/AAP 2025 30–60/min — framework matters.
 - Preductal pulse oximetry = right hand/wrist.
-- Meconium alone does not mandate tracheal suction.
-- In CDH, avoid prolonged bag-mask ventilation; intubate/decompress stomach.
-- RDS: CPAP restores FRC; surfactant reduces surface tension.
-- HFNC is not equivalent to predictable CPAP pressure.
-- LISA/thin-catheter surfactant is preferred when feasible in spontaneously breathing preterm infants.
-- Poractant alfa 200 mg/kg is the preferred initial dose in current European RDS guidance.
-- DOPE before assuming disease progression in sudden ventilator deterioration.
-- HFOV MAP mainly controls oxygenation; amplitude mainly controls ventilation.
-- Jensen Grade 3 BPD = invasive MV at 36 wk PMA.
-- Apnea of prematurity is a diagnosis after excluding secondary causes.
-- Hypothermia increases oxygen and glucose consumption and worsens neonatal instability.
-- Blood culture, not CRP, proves bacteremic sepsis.
-- A normal CBC does not exclude neonatal sepsis.
-- Do not delay antibiotics in shock to complete LP.
-- Ceftriaxone is generally avoided in neonates.
+- IAP preterm initial oxygen 21–30%; 2025 AHA/AAP <32 wk may start 30–100%.
+- No routine tracheal suction for non-vigorous meconium unless obstruction prevents ventilation.
+- NNF RDS CPAP starts at 5 cm H₂O; European RDS uses 6–8 cm H₂O.
+- NNF does not recommend HFNC as primary support for preterm RDS.
+- Poractant alfa 200 mg/kg is the preferred initial international rescue dose.
+- DOPE before assuming sudden deterioration is disease progression.
+- Jensen BPD: NIPPV at 36 wk PMA = Grade 2.
+- AOP is a diagnosis of exclusion.
+- Blood culture is the sepsis cornerstone; CRP/PCT are adjuncts.
+- Do not delay treatment of shock to complete LP.
+- NNF/ICMR sepsis treatment duration depends on diagnosis and culture, not a universal fixed course.
 - Jaundice <24 h is pathologic until evaluated.
-- TSB, not TcB, makes treatment decisions.
-- Do not subtract direct bilirubin from TSB for AAP thresholds.
-- Intermediate/advanced ABE can mandate exchange even with falling TSB.
-- Cooling does not prove HIE; neonatal encephalopathy has many causes.
-- Routine cooling evidence is strongest at ≥36 weeks with moderate/severe HIE.
-- EEG is required to reliably diagnose neonatal seizures.
-- Phenobarbital remains ILAE first-line ASM for most neonatal seizures requiring treatment.
-- Mother’s own milk is the preferred feed for preterm infants.
-- Pneumatosis intestinalis is the classic NEC radiographic sign.
-- Free air in NEC is a surgical emergency sign.
-- PDA presence does not equal hsPDA.
-- Routine prophylactic/early PDA closure is not recommended by AAP 2025.
-- A predominantly right-to-left ductus demands PPHN/duct-dependent CHD thinking before closure.
-- Murmur may be absent in a large PDA in an extremely preterm infant.
-- No single universal neonatal hypoglycemia threshold applies to every guideline.
-- Refractory hypocalcemia → check magnesium.
-- Correct hypernatremia slowly to reduce cerebral edema risk.
-- ROP screening is a time-critical longitudinal process, not one examination.
-- PVHI is not simply “grade IV IVH extension.”
-- Neurodevelopmental follow-up is part of neonatal treatment, not an afterthought.
+- Conjugated hyperbilirubinemia is never physiologic.
+- NNF and AAP differ on IVIG in alloimmune hemolysis — name the framework.
+- DAT-negative does not exclude G6PD-related hemolysis.
+- India-specific TH questions require NNF/HELIX context, not automatic AAP substitution.
+- NNF India TH requires high-quality NICU infrastructure and strict eligibility.
+- Standard AAP 2026 TH = 33.5–34.5°C, ≤6 h, 72 h, ≥36 wk moderate/severe HIE.
+- Mild HIE is not routinely cooled under AAP 2026.
+- Neonatal seizure diagnosis should use EEG whenever feasible; aEEG alone can mislead.
+- Pneumatosis intestinalis is the classic NEC sign; free air = perforation.
+- Mother’s own milk is first choice; donor human milk reduces NEC risk when MOM unavailable.
+- PDA on echo does not equal hsPDA.
+- Never close a right-to-left ductus before defining PPHN/duct-dependent CHD physiology.
+- PPHN treatment should follow echo-defined physiology when possible.
+- Do not mix CPS, PES and IAP hypoglycemia thresholds.
+- GIR formula uses D% as 10 for D10, not 0.10.
+- Suppressed ketones + FFA with glucagon rise supports hyperinsulinism even if insulin level is low.
+- OTC vs CPS1: urine orotic acid is the key discriminator.
+- NNF India ROP criteria are broader than classic AAP US screening criteria.
+- PVHI should be described as venous infarction in contemporary terminology; know older Papile terminology for exams.
 
-## R. Final 10-Minute Neonatology Checklist
+## 15. Final 5–10 Minute Checklist
 
-- [ ] I can run the neonatal resuscitation algorithm from apnea to epinephrine without looking.
-- [ ] I know RDS vs TTN vs MAS vs PPHN CXR/physiology discriminators.
-- [ ] I can state CPAP/surfactant/LISA/poractant 200 mg/kg rules.
-- [ ] I can troubleshoot sudden ventilator deterioration using DOPE.
-- [ ] I know Jensen BPD Grades 1/2/3 exactly.
-- [ ] I can separate AOP from secondary apnea and state caffeine dose.
-- [ ] I know culture/LP/stewardship logic for EOS/LOS.
-- [ ] I can apply bilirubin rate-of-rise, escalation and exchange principles.
-- [ ] I know cooling window/temperature/duration and 2026 gestational-age nuance.
-- [ ] I know phenobarbital first-line and second-line neonatal seizure choices.
-- [ ] I can recognize NEC on X-ray and state surgical red flags.
-- [ ] I can identify hsPDA physiology without treating every open ductus.
-- [ ] I can separate PDA from PPHN using shunt direction/hemodynamics.
-- [ ] I check glucose first in a jittery/seizing neonate.
-- [ ] I know ROP screening group and IVH/PVL distinctions.
+- [ ] Resuscitation: PPV indication/rate by framework, 3:1, epinephrine, volume, oxygen start.
+- [ ] RDS: NNF CPAP 5, no HFNC-primary, NIPPV, surfactant framework.
+- [ ] Ventilation: oxygenation vs ventilation, DOPE, OI, Jensen BPD.
+- [ ] Prematurity: ELBW/VLBW, caffeine, KMC, heat loss.
+- [ ] Sepsis: blood culture, LP timing, ICMR durations, stewardship.
+- [ ] Jaundice: NNF vs AAP chart logic, TcB/TSB, stopping, IVIG difference.
+- [ ] HIE: NNF India/HELIX caveat vs AAP 2026 high-income framework.
+- [ ] NEC: pneumatosis, perforation, human milk.
+- [ ] PDA/PPHN: selective PDA treatment, shunt direction, echo physiology.
+- [ ] Glucose: IAP thresholds, GIR, hyperinsulinism critical sample.
+- [ ] ROP/IVH/PVL: NNF screening, stage/zone/plus, PVHI terminology, PHVD imaging.
 
-## RED / AMBER / Green Maintenance
+## RED / AMBER Personalized Facts
 
-| Status | Concept | Action |
-|---|---|---|
-| AMBER | Jensen BPD Grade 3 = invasive MV at 36 wk PMA | Fresh retest + R1/R2/R3 until two separated successful retrievals |
-| AMBER maintenance | Any guessed/uncertain neonatal threshold | Convert to exact number + discriminator card before mock |
-| GREEN maintenance | Core NRP PPV/compression sequence | Brief retrieval every system revision |
-| GREEN maintenance | Cooling 6 h / 33.5–34.5°C / 72 h | Repeat before neonatal cumulative test |
-| GREEN maintenance | PDA presence ≠ hsPDA | Maintain through echo-based cases |
+> **RED / ACTIVE — highest priority**
+> - DOPE: circuit disconnection = Equipment failure.
+> - Jensen BPD: NIPPV at 36 wk PMA = Grade 2.
+> - G6PD jaundice can be DAT-negative.
+> - CPS vs PES hypoglycemia time windows must not be swapped.
+> - Early postnatal ECF contraction includes diuresis and natriuresis.
+> - GIR ↔ D% conversion requires factor 144 and fluid rate.
+> - Hyperinsulinism physiology: low BOHB + low FFA + glucagon response.
+> - OTC vs CPS1: urine orotic acid discriminator.
+> Source: Error Notebook + Day 12 retest tracker
 
-## Final 5-Minute Checklist
+> **AMBER / IMPROVING**
+> - aEEG/raw EEG seizure-vs-artifact interpretation — fresh-stem retest passed; retain for spaced review.
+> - Preterm energy/protein target interpretation — fresh-stem retest passed; retain for R2/R3.
+> Source: ERR-D7-Q34; ERR-D8-Q41
 
-- [ ] HR <100 → PPV; HR <60 after effective PPV → compressions.
-- [ ] IV epinephrine 0.01–0.03 mg/kg; ET 0.05–0.1 mg/kg.
-- [ ] RDS: CPAP 6–8; LISA; poractant 200 mg/kg.
-- [ ] HFOV oxygenation = MAP; ventilation = amplitude.
-- [ ] Jensen Grade 3 = invasive MV.
-- [ ] AOP: caffeine 20 mg/kg load; exclude secondary causes.
-- [ ] Culture is cornerstone; sterile + well → stop EOS empiric antibiotics ~36–48 h.
-- [ ] Bilirubin: age in hours + GA + risks; escalation = 2 mg/dL below exchange.
-- [ ] Cooling: ≥36 wk evidence, ≤6 h, 33.5–34.5°C, 72 h.
-- [ ] Neonatal seizure: EEG diagnosis; phenobarbital first-line.
-- [ ] NEC: pneumatosis; free air → surgery.
-- [ ] PDA: do not treat every open ductus; AAP 2025 discourages prophylactic/early routine closure.
-- [ ] PPHN: right-to-left shunting; optimize lung + systemic hemodynamics.
-- [ ] Glucose first in jittery/seizing neonate; refractory Ca → check Mg.
-- [ ] ROP is serial screening; IVH ≠ PVL; corrected age for development.
+## Final 5-Minute Printable Checklist
 
-# Reference & Protocol Notes
+- [ ] PPV rate and O₂ start — which framework?
+- [ ] IAP adrenaline / volume doses.
+- [ ] NNF CPAP 5 cm; no HFNC-primary RDS.
+- [ ] European surfactant trigger and poractant dose.
+- [ ] DOPE / OI / Jensen BPD.
+- [ ] ICMR sepsis durations and 48-h review.
+- [ ] NNF bilirubin TcB/TSB, stopping rule, IVIG difference.
+- [ ] NNF India TH criteria + HELIX caveat; AAP 2026 separately.
+- [ ] NEC / human milk / PDA selective management.
+- [ ] IAP glucose thresholds / GIR / hyperinsulinism.
+- [ ] NNF ROP criteria / ≥65 wk follow-up / IVH-PVHI terminology.
+
+## Current Protocol Sources Verified for the Final Version
 
 - Nelson Textbook of Pediatrics, 22nd Edition — primary conceptual textbook.
-- American Heart Association / American Academy of Pediatrics. Part 5: Neonatal Resuscitation, 2025 Guidelines; reflected in NRP 9th Edition (2025).
-- Sweet DG, et al. European Consensus Guidelines on the Management of Respiratory Distress Syndrome: 2025. Neonatology. Published 2026.
-- American Academy of Pediatrics. Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant ≥35 Weeks’ Gestation. 2022; plus current phototherapy technical guidance.
-- American Academy of Pediatrics. Therapeutic Hypothermia for Neonatal Hypoxic-Ischemic Encephalopathy. Clinical Report. 2026.
-- Pressler RM, et al. ILAE Task Force. Treatment of Seizures in the Neonate: Guidelines and Consensus-Based Recommendations. Epilepsia. 2023.
-- American Academy of Pediatrics. Patent Ductus Arteriosus in Preterm Infants. Clinical Report. 2025.
-- American Academy of Pediatrics / AAO / AAPOS. Screening Examination of Premature Infants for Retinopathy of Prematurity — current U.S. screening framework.
-- ESPGHAN Committee on Nutrition. Enteral Nutrition in Preterm Infants: Position Paper. 2022.
-- American Academy of Pediatrics clinical reports for early-onset sepsis risk assessment in infants ≥35 weeks and ≤34 6/7 weeks — current framework where applicable.
-- Volpe’s Neurology of the Newborn and Cloherty & Stark Manual of Neonatal Care — supplementary standard neonatal references.
+- Indian Academy of Pediatrics Standard Treatment Guidelines — neonatal hypoglycemia, neonatal resuscitation and related neonatal STGs.
+- National Neonatology Forum India CPGs — non-invasive respiratory support, neonatal sepsis/antibiotic stewardship, hyperbilirubinemia, ROP, oxygen/surfactant resources.
+- NNF India Position Statement and Guidelines for Therapeutic Hypothermia, 2021.
+- ICMR-DHR Standard Treatment Workflow — neonatal sepsis.
+- AHA/AAP 2025 Neonatal Resuscitation Guidelines.
+- AAP 2026 Clinical Report — Therapeutic Hypothermia for Neonatal HIE.
+- European Consensus Guidelines on RDS: 2025 (published 2026).
+- AAP 2025 Clinical Report — Patent Ductus Arteriosus in Preterm Infants.
+- AAP 2026 Clinical Report — Promoting Human Milk and Breastfeeding for the VLBW Infant.
+- AAP 2022 Hyperbilirubinemia Clinical Practice Guideline.
+- WHO recommendations for care of preterm/LBW infants and KMC.
 
-> **GUIDELINE-USE RULE**
-> When a question names a society or protocol, use that protocol’s criteria. When guidance differs between societies, do not blend them into a hybrid rule. Nelson remains the conceptual backbone; newer authoritative guidance governs current management details.
-
-> **CLINICAL-USE DISCLAIMER**
-> This is an exam-focused educational document, not a bedside prescribing manual. Drug preparation, infusion, procedural details and unit-specific thresholds must be checked against current institutional neonatal protocols/formulary.
+> **EXAM USE NOTE**
+> - When two authoritative frameworks differ, this document labels both instead of creating a hybrid recommendation.
+> - For an Indian exam stem without a named alternative framework, use the IAP/NNF/ICMR rule when available.
+> - For bedside care, follow the current local NICU protocol and specialist judgement.

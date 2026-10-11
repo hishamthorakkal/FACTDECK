@@ -40,6 +40,7 @@ A file that is empty (or only has a `<!-- comment -->`) shows "coming soon". Upd
 | `1.` `2.` … | numbered steps |
 | `[ ]` | tick box |
 | `Source:` | 📍 trace-back line |
+| `Priority: red` / `amber` / `green` | starting status before the first review (red = relearn first); the line itself is hidden |
 
 The card colour and label (Dose, Cutoff, Timing, Formula, Distractor, Emergency steps…) are chosen automatically.
 

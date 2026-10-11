@@ -51,11 +51,14 @@
       ]);
       const seen = new Set();
       for (const sec of parseDeck(deck).sections) for (const rc of sec.cards) {
-        const c = buildCard(rc.heading, rc.lines, sec.title);
+        // "Priority: red|amber|green" sets the starting status of a fact you have not reviewed yet
+        const pr = rc.lines.map(l => (l.match(/^priority\s*:\s*(red|amber|green)\b/i) || [])[1]).find(Boolean);
+        const c = buildCard(rc.heading, rc.lines.filter(l => !/^priority\s*:/i.test(l)), sec.title);
         const id = factKey(s.id, c.title);
         if (c.type === 'guide' || !c.lines.length || seen.has(id)) continue;
         seen.add(id);
-        cards.push({ ...c, id, system: s.id, status: 'amber', streak: 0, misses: 0, due: 0, ...progress[id] });
+        const start = (pr || 'amber').toLowerCase();
+        cards.push({ ...c, id, system: s.id, status: start, streak: start === 'green' ? 2 : 0, misses: 0, due: 0, ...progress[id] });
       }
       const blocks = parseNotes(rr);
       if (blocks.length) notes[s.id] = blocks;

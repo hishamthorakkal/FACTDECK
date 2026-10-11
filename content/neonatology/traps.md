@@ -2,356 +2,407 @@
 
 # Neonatology — System Trap Note
 
-> **HOW TO USE THE TRAP NOTE**
-> Cover the “Correct rule” and “Latest protocol” columns first. Read the tempting wrong choice and force yourself to state the decisive discriminator. Personalized RED/AMBER items appear first.
+## Trap 1 — Ventilation before compressions
+- Tempting: Start compressions at HR 70/min.
+- Why it looks right: Bradycardia feels primarily cardiac.
+- Decisive clue: Most neonatal bradycardia is ventilation-related.
+- Correct rule: Optimize effective PPV first; compressions only if HR remains <60/min after effective ventilation.
+- Latest protocol: IAP / AHA-AAP 2025
+- In the exam: Choose the step that fixes ventilation before CPR when HR criterion is not met.
+- Source: Day 1 > Resuscitation
 
-## Trap 1 — Jensen Grade 3 BPD
-- Tempting: CPAP at 36 weeks PMA
-- Why it looks right: CPAP is positive-pressure support and feels “severe.”
-- Decisive clue: Jensen grading is based on support type at 36 wk PMA.
-- Correct rule: Grade 3 = invasive MV; CPAP/NIPPV = Grade 2.
-- Latest protocol: Jensen 2019 support-based outcome definition.
-- In the exam: If invasive MV is present at 36 wk PMA, choose Grade 3 immediately.
-- Source: Day 5 > BPD > Error Notebook 1× AMBER
+## Trap 2 — PPV rate framework
+- Tempting: Use one universal PPV rate in every question.
+- Why it looks right: Both 40–60 and 30–60 appear in current study sources.
+- Decisive clue: Framework is different.
+- Correct rule: IAP/NRP teaching: 40–60/min; 2025 AHA/AAP: 30–60/min.
+- Latest protocol: IAP 2022 / AHA-AAP 2025
+- In the exam: Follow the framework named in the stem.
+- Source: Day 1 > PPV
 
-## Trap 2 — Compressions too early
-- Tempting: Start chest compressions at HR 70
-- Why it looks right: Bradycardia looks severe.
-- Decisive clue: Neonatal bradycardia is usually ventilation failure.
-- Correct rule: Compressions only if HR <60 after effective ventilation that inflates lungs.
-- Latest protocol: AHA/AAP 2025.
-- In the exam: Fix ventilation first unless HR remains <60.
-- Source: Day 1 > NRP
-
-## Trap 3 — ET epinephrine dose
-- Tempting: Use IV dose down the ETT
-- Why it looks right: Same drug and same emergency.
-- Decisive clue: ET absorption is less reliable.
-- Correct rule: ET dose is larger (0.05–0.1 mg/kg) while vascular access is obtained; IV/UVC 0.01–0.03 mg/kg.
-- Latest protocol: AHA/AAP 2025.
-- In the exam: Match dose to route.
+## Trap 3 — Adrenaline expression
+- Tempting: Remember only mg/kg and miss IAP mL/kg format.
+- Why it looks right: Many resources teach mg/kg.
+- Decisive clue: IAP exam material often gives 1:10,000 in mL/kg.
+- Correct rule: IV 0.2 mL/kg common anchor (0.1–0.3 mL/kg); ET 1 mL/kg.
+- Latest protocol: IAP
+- In the exam: Convert concentration carefully.
 - Source: Day 1 > Drugs
 
-## Trap 4 — Routine meconium suction
-- Tempting: Intubate/suction every nonvigorous meconium baby
-- Why it looks right: Older teaching emphasized suction.
-- Decisive clue: Ventilation delay is more harmful than routine suction benefit.
-- Correct rule: Prioritize ventilation; suction only for suspected obstruction.
-- Latest protocol: AHA/AAP 2025/NRP 9e.
-- In the exam: Ask: is obstruction preventing ventilation?
+## Trap 4 — Volume bolus
+- Tempting: Always give 20 mL/kg for suspected blood loss.
+- Why it looks right: Some international guidance permits 10–20.
+- Decisive clue: IAP anchor is 10 mL/kg.
+- Correct rule: Use 10 mL/kg over 5–10 min in IAP-framed questions.
+- Latest protocol: IAP
+- In the exam: Do not silently import the wider international range.
+- Source: Day 1 > Volume
+
+## Trap 5 — Starting oxygen in preterm
+- Tempting: Always choose 21–30% for <32 weeks.
+- Why it looks right: That is IAP teaching.
+- Decisive clue: 2025 AHA/AAP changed the international range for <32 weeks.
+- Correct rule: IAP 21–30%; AHA/AAP 2025 <32 wk may start 30–100%.
+- Latest protocol: IAP / AHA-AAP 2025
+- In the exam: Framework label decides the answer.
+- Source: Day 1 > Oxygen
+
+## Trap 6 — Meconium suction
+- Tempting: Routine tracheal suction for non-vigorous MSAF.
+- Why it looks right: Meconium is in the airway.
+- Decisive clue: Ventilation has priority unless obstruction prevents it.
+- Correct rule: Do not delay PPV for routine suction.
+- Latest protocol: IAP / AHA-AAP
+- In the exam: Ask whether obstruction is actually preventing ventilation.
 - Source: Day 1 > Meconium
 
-## Trap 5 — RDS oxygen means intubation
-- Tempting: FiO₂ 0.30 → intubate
-- Why it looks right: Oxygen need signals worsening RDS.
-- Decisive clue: Surfactant can be given on NRS via LISA.
-- Correct rule: Optimize NRS; use surfactant threshold logic; intubate only if needed.
-- Latest protocol: European RDS 2025.
-- In the exam: Do not equate surfactant need with MV need.
-- Source: Day 2 > RDS
+## Trap 7 — Cord milking at 25 weeks
+- Tempting: Milk cord when DCC not feasible.
+- Why it looks right: Placental transfusion is beneficial.
+- Decisive clue: Intact cord milking <28 weeks raises severe IVH concern.
+- Correct rule: Use DCC ≥60 s if immediate resuscitation not required; avoid intact cord milking <28 weeks.
+- Latest protocol: AHA/AAP 2025 / ILCOR
+- In the exam: Check GA before choosing milking.
+- Source: Day 1 > Cord management
 
-## Trap 6 — Wrong surfactant dose
-- Tempting: Poractant 100 mg/kg always
-- Why it looks right: Many older regimens use 100 mg/kg.
-- Decisive clue: Current European evidence favors the higher initial poractant dose.
-- Correct rule: Poractant alfa 200 mg/kg initial dose is preferred.
-- Latest protocol: European RDS 2025.
-- In the exam: If the stem asks current European guidance, choose 200 mg/kg.
-- Source: Day 2 > Surfactant
-
-## Trap 7 — HFNC = CPAP
-- Tempting: Assume equivalent distending pressure
-- Why it looks right: Both are nasal noninvasive supports.
-- Decisive clue: HFNC airway pressure is less predictable.
-- Correct rule: CPAP/NIPPV is the primary predictable NRS strategy for RDS.
-- Latest protocol: European RDS 2025.
-- In the exam: Use HFNC mainly as selected support/weaning, not as identical CPAP.
+## Trap 8 — HFNC as primary RDS support
+- Tempting: HFNC is acceptable first-line primary support for preterm RDS.
+- Why it looks right: It is comfortable and widely used.
+- Decisive clue: NNF does not recommend it as primary support for RDS.
+- Correct rule: Use bubble CPAP / NIPPV as NNF framework.
+- Latest protocol: NNF India NIV CPG
+- In the exam: India-framed question: HFNC is the trap.
 - Source: Day 2 > NRS
 
-## Trap 8 — HFOV frequency intuition
-- Tempting: Increase frequency to clear more CO₂
-- Why it looks right: On conventional ventilation, faster rate can raise minute ventilation.
-- Decisive clue: HFOV physiology differs.
-- Correct rule: Amplitude is main ventilation control; lowering frequency can increase oscillatory VT and CO₂ clearance.
-- Latest protocol: Contemporary neonatal ventilation physiology.
-- In the exam: Think amplitude first; do not import conventional-rate intuition.
-- Source: Day 3 > HFOV
+## Trap 9 — CPAP pressure
+- Tempting: Start all RDS CPAP at 6–8 cm H₂O.
+- Why it looks right: European RDS uses 6–8.
+- Decisive clue: NNF India begins at 5 cm H₂O.
+- Correct rule: Use 5 cm H₂O in NNF-framed questions; label international alternative.
+- Latest protocol: NNF India / European RDS 2025
+- In the exam: Never combine both into one unlabeled rule.
+- Source: Day 2 > CPAP
 
-## Trap 9 — Pneumothorax imaging delay
-- Tempting: Wait for CXR before decompression
-- Why it looks right: Radiograph confirms diagnosis.
-- Decisive clue: Unstable tension physiology is a clinical emergency.
-- Correct rule: Decompress immediately if unstable; image after stabilization.
-- Latest protocol: Standard neonatal emergency practice.
-- In the exam: Instability + unilateral breath sounds overrides imaging delay.
-- Source: Day 3 > Air leak
+## Trap 10 — CPAP weaning
+- Tempting: Cycle CPAP on/off to wean.
+- Why it looks right: Cycling sounds gradual.
+- Decisive clue: NNF favors sudden discontinuation.
+- Correct rule: Use NNF recommendation when Indian framework is named.
+- Latest protocol: NNF India
+- In the exam: Know the exact weaning framework.
+- Source: Day 2 > CPAP
 
-## Trap 10 — AOP by prematurity alone
-- Tempting: Any apnea in a preterm infant = AOP
-- Why it looks right: Prematurity strongly predisposes.
-- Decisive clue: Sepsis/metabolic/CNS/temperature causes can mimic AOP.
-- Correct rule: AOP is a diagnosis after excluding secondary causes.
-- Latest protocol: Nelson + neonatal standard practice.
-- In the exam: Rule out dangerous reversible causes before labeling AOP.
+## Trap 11 — Surfactant trigger
+- Tempting: FiO₂ 0.30 alone mandates surfactant.
+- Why it looks right: 0.30 is a memorable trigger.
+- Decisive clue: Current international protocol also considers worsening RDS and NRS pressure/LUS.
+- Correct rule: For >28 wk, European 2025 suggests MAP ≥6 + FiO₂ ≥0.30 or LUS evidence.
+- Latest protocol: European RDS 2025
+- In the exam: Do not treat one isolated number as the whole decision.
+- Source: Day 2 > Surfactant
+
+## Trap 12 — Poractant dose
+- Tempting: 100 mg/kg is preferred initial poractant dose.
+- Why it looks right: It is a known dose.
+- Decisive clue: 200 mg/kg performs better for initial rescue.
+- Correct rule: Use 200 mg/kg when poractant alfa is named.
+- Latest protocol: European RDS 2025
+- In the exam: Preparation-specific dosing matters.
+- Source: Day 2 > Surfactant
+
+## Trap 13 — DOPE disconnection
+- Tempting: Disconnected circuit = tube displacement.
+- Why it looks right: The infant suddenly decompensates.
+- Decisive clue: Circuit disconnection is Equipment failure.
+- Correct rule: E = Equipment.
+- Latest protocol: Ventilation troubleshooting
+- In the exam: Map the literal failure correctly.
+- Source: Error Notebook > ERR-D5-Q34
+
+## Trap 14 — Jensen BPD grade
+- Tempting: NIPPV at 36 wk PMA = Grade 1.
+- Why it looks right: No invasive ventilation sounds mild.
+- Decisive clue: Support mode determines grade.
+- Correct rule: NIPPV = Grade 2; Grade 1 is nasal cannula ≤2 L/min.
+- Latest protocol: Jensen BPD
+- In the exam: Read flow and support mode exactly.
+- Source: Error Notebook > ERR-D5-Q53
+
+## Trap 15 — AOP diagnosis
+- Tempting: Any apnea in a preterm infant = apnea of prematurity.
+- Why it looks right: Prematurity makes AOP common.
+- Decisive clue: AOP is a diagnosis of exclusion.
+- Correct rule: Exclude sepsis, hypoglycemia, anemia, seizures, obstruction, temperature problems, etc.
+- Latest protocol: Standard neonatal practice
+- In the exam: New/worsening apnea → search secondary cause.
 - Source: Day 4 > Apnea
 
-## Trap 11 — CRP proves sepsis
-- Tempting: Treat because CRP is high
-- Why it looks right: Inflammatory markers feel objective.
-- Decisive clue: CRP is delayed/nonspecific.
-- Correct rule: Blood culture + clinical context are central; serial markers support stewardship but do not independently prove sepsis.
-- Latest protocol: AAP EOS frameworks.
-- In the exam: Never diagnose bacteremic sepsis from CRP alone.
+## Trap 16 — CRP rules out sepsis
+- Tempting: One normal CRP excludes sepsis.
+- Why it looks right: CRP is objective and familiar.
+- Decisive clue: Sensitivity is imperfect early.
+- Correct rule: Use culture + clinical context; serial biomarkers assist stewardship.
+- Latest protocol: ICMR/NNF
+- In the exam: Do not let one normal CRP overrule a sick infant.
 - Source: Day 5 > Sepsis
 
-## Trap 12 — LP before stabilization
-- Tempting: Do LP before antibiotics in shock
-- Why it looks right: CSF culture is valuable.
-- Decisive clue: Procedure can destabilize a critically ill infant.
-- Correct rule: Stabilize and give antibiotics; LP when safe.
-- Latest protocol: AAP neonatal sepsis frameworks.
-- In the exam: Shock/seizures + instability → treat first, LP when stable.
-- Source: Day 5 > Meningitis
+## Trap 17 — LP before antibiotics
+- Tempting: LP must precede antibiotics even in shock.
+- Why it looks right: CSF is diagnostically important.
+- Decisive clue: Stabilization takes priority.
+- Correct rule: Treat shock/sepsis; LP when safe.
+- Latest protocol: ICMR/NNF
+- In the exam: Next best step in unstable infant = stabilize/treat first.
+- Source: Day 5 > LP
 
-## Trap 13 — Continue antibiotics for abnormal CBC
-- Tempting: Keep antibiotics despite sterile cultures because I:T ratio/CRP abnormal
-- Why it looks right: Lab abnormality feels safer to treat.
-- Decisive clue: Single labs have poor specificity.
-- Correct rule: If cultures sterile, infant well and no focal infection, reassess and stop empiric therapy ~36–48 h.
-- Latest protocol: AAP EOS frameworks.
-- In the exam: Culture + clinical course outrank isolated CBC/CRP.
+## Trap 18 — Fixed 7-day antibiotics
+- Tempting: Every neonatal sepsis case needs 7 days.
+- Why it looks right: 7 days is commonly memorized.
+- Decisive clue: Duration depends on culture/diagnosis/CSF.
+- Correct rule: ICMR: 5–7 / 10–14 / 21 days according to syndrome.
+- Latest protocol: ICMR-DHR workflow
+- In the exam: Use diagnosis-specific duration.
 - Source: Day 5 > Stewardship
 
-## Trap 14 — TcB treatment decision
-- Tempting: Use TcB to decide exchange/phototherapy
-- Why it looks right: TcB is convenient and correlates with TSB.
-- Decisive clue: Treatment decisions require serum measurement.
-- Correct rule: Use TSB for phototherapy/escalation/exchange decisions.
-- Latest protocol: AAP hyperbilirubinemia 2022.
-- In the exam: TcB screens; TSB treats.
-- Source: Day 6 > Bilirubin
+## Trap 19 — Ceftriaxone
+- Tempting: Routine ceftriaxone for neonatal meningitis.
+- Why it looks right: Good CSF penetration.
+- Decisive clue: Neonatal bilirubin/calcium concerns.
+- Correct rule: Avoid ceftriaxone; use neonatal-appropriate regimen per policy.
+- Latest protocol: International neonatal pharmacology
+- In the exam: Age changes antibiotic choice.
+- Source: Day 5 > Antibiotics
 
-## Trap 15 — Subtract direct bilirubin
-- Tempting: Use indirect bilirubin for AAP threshold
-- Why it looks right: Neurotoxicity is from unconjugated bilirubin.
-- Decisive clue: AAP thresholds are based on TSB.
-- Correct rule: Do not subtract direct bilirubin before applying thresholds.
-- Latest protocol: AAP hyperbilirubinemia 2022.
-- In the exam: Use total serum bilirubin.
-- Source: Day 6 > Thresholds
+## Trap 20 — Early jaundice
+- Tempting: Jaundice <24 h may still be physiologic if TSB is modest.
+- Why it looks right: Absolute value may look low.
+- Decisive clue: Timing is a red flag.
+- Correct rule: Jaundice in first 24 h requires pathologic evaluation.
+- Latest protocol: NNF / AAP
+- In the exam: Timing can outweigh a single number.
+- Source: Day 6 > Jaundice
 
-## Trap 16 — Wait for exchange line
-- Tempting: Escalate only when exchange threshold crossed
-- Why it looks right: Exchange is the dramatic threshold.
-- Decisive clue: Escalation must begin earlier.
-- Correct rule: Escalation threshold = 2 mg/dL below exchange threshold.
-- Latest protocol: AAP hyperbilirubinemia 2022.
-- In the exam: Recognize the pre-exchange emergency zone.
-- Source: Day 6 > Escalation
+## Trap 21 — TcB near threshold
+- Tempting: Use TcB alone when it is near treatment threshold.
+- Why it looks right: TcB is non-invasive and convenient.
+- Decisive clue: NNF requires confirmatory TSB near threshold.
+- Correct rule: If TcB is within ~2.9 mg/dL of threshold → TSB.
+- Latest protocol: NNF India
+- In the exam: Near threshold = serum confirmation.
+- Source: Day 6 > TcB
 
-## Trap 17 — Positive DAT = IVIG
-- Tempting: Give IVIG because DAT positive
-- Why it looks right: DAT proves immune coating.
-- Decisive clue: Severity and threshold determine treatment.
-- Correct rule: AAP IVIG is only a consideration in appropriate DAT+ isoimmune disease at escalation threshold; exchange readiness continues.
-- Latest protocol: AAP hyperbilirubinemia 2022.
-- In the exam: DAT identifies mechanism, not automatic therapy.
-- Source: Day 6 > HDFN
+## Trap 22 — Phototherapy stopping
+- Tempting: Stop as soon as TSB dips just below threshold.
+- Why it looks right: Treatment line looks like a stop line.
+- Decisive clue: NNF uses a wider margin.
+- Correct rule: Stop when ≥2.9 mg/dL below threshold; hemolysis requires closer rebound strategy.
+- Latest protocol: NNF India
+- In the exam: Know start vs stop rules separately.
+- Source: Day 6 > Phototherapy
 
-## Trap 18 — Falling TSB = safe ABE
-- Tempting: Continue phototherapy because TSB falling
-- Why it looks right: Trend looks reassuring.
-- Decisive clue: Neurologic toxicity can already be present.
-- Correct rule: Intermediate/advanced ABE → urgent exchange irrespective of a slightly lower/falling TSB.
-- Latest protocol: AAP hyperbilirubinemia 2022.
-- In the exam: Neuro exam can override the bilirubin trend.
-- Source: Day 6 > ABE
+## Trap 23 — IVIG in hemolysis
+- Tempting: IVIG is always indicated in Rh/ABO disease.
+- Why it looks right: Older teaching emphasized IVIG.
+- Decisive clue: NNF and AAP differ.
+- Correct rule: NNF: not recommended routinely; AAP 2022: selected isoimmune cases near escalation threshold.
+- Latest protocol: NNF / AAP 2022
+- In the exam: Name the framework.
+- Source: Day 6 > IVIG
 
-## Trap 19 — Low Apgar = HIE
-- Tempting: Diagnose HIE from Apgar/acidosis alone
-- Why it looks right: Perinatal depression suggests asphyxia.
-- Decisive clue: HIE requires neonatal encephalopathy attributable to hypoxia-ischemia; mimics exist.
-- Correct rule: Use perinatal context + encephalopathy staging + exclusion of other causes.
-- Latest protocol: AAP TH 2026.
-- In the exam: Do not equate depression with etiologic proof.
-- Source: Day 7 > HIE
+## Trap 24 — DAT-negative hemolysis
+- Tempting: DAT-negative excludes hemolysis.
+- Why it looks right: DAT detects immune coating.
+- Decisive clue: G6PD/nonimmune hemolysis can be DAT-negative.
+- Correct rule: Investigate nonimmune hemolysis when pattern fits.
+- Latest protocol: NNF/AAP context
+- In the exam: DAT answers immune mechanism, not all hemolysis.
+- Source: Error Notebook > ERR-D6-Q60
 
-## Trap 20 — Cool every encephalopathic infant
-- Tempting: Therapeutic hypothermia for any neonatal encephalopathy
-- Why it looks right: Cooling can be neuroprotective.
-- Decisive clue: Evidence is indication-specific.
-- Correct rule: Routine benefit: moderate/severe HIE, ≥36 wk, within 6 h, 33.5–34.5°C for 72 h.
-- Latest protocol: AAP TH 2026.
-- In the exam: Check GA, timing and HIE severity before cooling.
+## Trap 25 — Cooling everywhere
+- Tempting: Therapeutic hypothermia is proven equally beneficial in every Indian/LMIC setting.
+- Why it looks right: HIC RCTs show clear benefit.
+- Decisive clue: HELIX and NNF India highlight setting/quality/selection dependence.
+- Correct rule: In India, use NNF quality/eligibility framework and recognize HELIX evidence caveat.
+- Latest protocol: NNF India 2021 / HELIX
+- In the exam: Do not replace India-specific context with an unlabeled AAP rule.
 - Source: Day 7 > TH
 
-## Trap 21 — Routine cooling at 35 wk
-- Tempting: Treat 35+2 exactly like 39 wk
-- Why it looks right: Near-term physiology seems similar.
-- Decisive clue: Evidence is limited for 35+0–35+6.
-- Correct rule: Individualized consideration rather than routine evidence-based cooling.
-- Latest protocol: AAP TH 2026.
-- In the exam: If exam names AAP 2026, ≥36 wk is strongest evidence base.
-- Source: Day 7 > TH GA
+## Trap 26 — Cooling mild HIE
+- Tempting: Cool mild HIE routinely.
+- Why it looks right: Mild HIE can have adverse outcomes.
+- Decisive clue: Evidence for routine cooling is insufficient.
+- Correct rule: Do not routinely cool mild HIE in the AAP framework.
+- Latest protocol: AAP 2026
+- In the exam: Severity category matters.
+- Source: Day 7 > HIE
 
-## Trap 22 — Clinical seizure diagnosis only
-- Tempting: Treat any jittering as seizure
-- Why it looks right: Motor events look dramatic.
-- Decisive clue: Many neonatal seizures are electrographic-only; many movements are non-epileptic.
-- Correct rule: EEG confirmation is required for reliable seizure diagnosis.
-- Latest protocol: ILAE 2023.
-- In the exam: Use EEG/aEEG context, not movement alone.
-- Source: Day 7 > EEG
+## Trap 27 — Late cooling
+- Tempting: Cooling after 6 h is identical to standard cooling.
+- Why it looks right: The therapy mechanism seems the same.
+- Decisive clue: Evidence is weaker/uncertain.
+- Correct rule: AAP: selected 6–24 h late start may be considered; NNF India 2021 states insufficient evidence beyond 6 h.
+- Latest protocol: AAP 2026 / NNF 2021
+- In the exam: Use the framework and wording carefully.
+- Source: Day 7 > Timing
 
-## Trap 23 — Levetiracetam first-line
-- Tempting: Choose levetiracetam because of favorable tolerability
-- Why it looks right: Widely used and perceived safer.
-- Decisive clue: Efficacy data favor phenobarbital for neonatal seizure cessation.
-- Correct rule: Phenobarbital is ILAE first-line unless channelopathy is likely.
-- Latest protocol: ILAE 2023.
-- In the exam: First-line = phenobarbital in most etiologies.
-- Source: Day 7 > Seizures
+## Trap 28 — aEEG seizure
+- Tempting: Saw-tooth aEEG alone proves seizure.
+- Why it looks right: Pattern is suggestive.
+- Decisive clue: Artifact can mimic trend changes.
+- Correct rule: Confirm with evolving raw EEG/continuous EEG where possible.
+- Latest protocol: Neonatal EEG guidance
+- In the exam: Look for evolving ictal correlate.
+- Source: Error Notebook > ERR-D7-Q34
 
-## Trap 24 — Continue ASM because MRI abnormal
-- Tempting: Discharge on phenobarbital after acute provoked seizure because MRI/EEG abnormal
-- Why it looks right: Abnormal tests imply future risk.
-- Decisive clue: Acute provoked seizure treatment duration is not based solely on residual MRI/EEG abnormalities.
-- Correct rule: If acute provoked seizures have ceased and no neonatal epilepsy, discontinue ASM before discharge.
-- Latest protocol: ILAE 2023.
-- In the exam: Separate acute symptomatic seizures from neonatal-onset epilepsy.
-- Source: Day 7 > ASM duration
-
-## Trap 25 — Residuals = NEC
-- Tempting: Stop feeds for every gastric residual
-- Why it looks right: Residuals are easy to measure and create concern.
-- Decisive clue: They are nonspecific.
-- Correct rule: Diagnose NEC from systemic/abdominal signs + imaging; do not overdiagnose from residuals alone.
-- Latest protocol: ESPGHAN preterm feeding principles + NEC practice.
-- In the exam: Look for distension, bloody stool, pneumatosis, systemic illness.
+## Trap 29 — NEC pneumatosis
+- Tempting: Pneumatosis means perforation.
+- Why it looks right: It is a classic NEC finding.
+- Decisive clue: Perforation = free intraperitoneal air.
+- Correct rule: Pneumatosis = intramural gas; free air changes surgical urgency.
+- Latest protocol: Standard NEC management
+- In the exam: Name the radiographic sign precisely.
 - Source: Day 8 > NEC
 
-## Trap 26 — Formula equals donor milk in high-risk preterm
-- Tempting: Use formula immediately when maternal milk absent
-- Why it looks right: Formula is nutritionally complete and available.
-- Decisive clue: Human milk lowers NEC risk.
-- Correct rule: Donor human milk is generally preferred over formula for high-risk preterm infants when mother’s milk is insufficient and donor milk is available.
-- Latest protocol: ESPGHAN 2022.
-- In the exam: Prioritize human milk strategy.
-- Source: Day 8 > Feeding
+## Trap 30 — Preterm nutrition
+- Tempting: 125 kcal/kg/day and 3.8 g/kg/day protein are excessive.
+- Why it looks right: Values look high compared with term infants.
+- Decisive clue: Preterm needs are higher and are expressed as ranges.
+- Correct rule: These values can be within target ranges for many VLBW infants.
+- Latest protocol: Neonatal nutrition guidance
+- In the exam: Do not apply term-infant intuition.
+- Source: Error Notebook > ERR-D8-Q41
 
-## Trap 27 — PDA on echo = treat
-- Tempting: Close every PDA
-- Why it looks right: Persistence feels pathologic.
-- Decisive clue: Many preterm PDAs close or are tolerated without benefit from early closure.
-- Correct rule: No prophylactic/routine early (<2 wk) medical closure; treat selected hsPDA.
-- Latest protocol: AAP PDA 2025.
-- In the exam: Ask whether it is hemodynamically significant, not merely present.
+## Trap 31 — Donor milk
+- Tempting: Formula is automatically second choice after MOM.
+- Why it looks right: Formula may support faster growth.
+- Decisive clue: Donor milk reduces NEC risk and is recommended when MOM unavailable in high-risk VLBW.
+- Correct rule: Use PDHM when available, with fortification as needed.
+- Latest protocol: AAP 2026
+- In the exam: Milk source and nutrient fortification are separate decisions.
+- Source: Day 8 > Human milk
+
+## Trap 32 — PDA on echo
+- Tempting: Every PDA on echo should be closed.
+- Why it looks right: PDA is a structural abnormality.
+- Decisive clue: Hemodynamic significance matters.
+- Correct rule: Many stable infants are managed expectantly.
+- Latest protocol: AAP 2025
+- In the exam: Treat physiology, not the label.
 - Source: Day 9 > PDA
 
-## Trap 28 — Murmur excludes/defines hsPDA
-- Tempting: No murmur = no PDA
-- Why it looks right: Classic PDA has a murmur.
-- Decisive clue: Tiny preterm infants with large shunts may have soft/absent murmurs.
-- Correct rule: Echo + physiology define PDA significance.
-- Latest protocol: AAP PDA 2025.
-- In the exam: Use clinical trajectory and echo, not auscultation alone.
-- Source: Day 9 > PDA
+## Trap 33 — Right-to-left ductus
+- Tempting: Close a large right-to-left PDA.
+- Why it looks right: Size seems concerning.
+- Decisive clue: R→L flow can reflect high PVR or duct-dependent CHD.
+- Correct rule: Define physiology before closure.
+- Latest protocol: PDA/PPHN physiology
+- In the exam: Shunt direction comes first.
+- Source: Day 9 > PDA/PPHN
 
-## Trap 29 — Close right-to-left ductus
-- Tempting: Treat PDA despite predominant right-to-left flow
-- Why it looks right: An open ductus looks like the lesion.
-- Decisive clue: Right-to-left flow may be compensatory in PPHN/duct-dependent CHD.
-- Correct rule: Evaluate pulmonary pressure and CHD before closure.
-- Latest protocol: AAP PDA 2025 + PPHN physiology.
-- In the exam: Shunt direction changes the entire management branch.
-- Source: Day 9 > Hemodynamics
-
-## Trap 30 — Universal glucose cutoff
-- Tempting: Memorize one number for every neonate
-- Why it looks right: Exams love thresholds.
-- Decisive clue: Guidelines vary by age/risk/symptoms and laboratory method.
-- Correct rule: Symptomatic hypoglycemia is urgent; follow named protocol for operational thresholds.
-- Latest protocol: Current neonatal hypoglycemia guidance varies.
-- In the exam: If guideline is named, use that framework; if symptomatic, treat promptly.
-- Source: Day 10 > Glucose
-
-## Trap 31 — Calcium only in refractory hypocalcemia
-- Tempting: Keep giving calcium
-- Why it looks right: Low calcium is the visible abnormality.
-- Decisive clue: Hypomagnesemia can make hypocalcemia refractory.
-- Correct rule: Check and correct magnesium.
-- Latest protocol: Nelson + neonatal electrolyte practice.
-- In the exam: Refractory Ca = think Mg.
-- Source: Day 10 > Ca/Mg
-
-## Trap 32 — Rapid hypernatremia correction
-- Tempting: Normalize Na quickly
-- Why it looks right: Severe number feels dangerous.
-- Decisive clue: Rapid fall can cause cerebral edema.
-- Correct rule: Calculate free-water deficit and correct slowly with frequent monitoring.
-- Latest protocol: Standard neonatal electrolyte practice.
-- In the exam: The danger is both high Na and overly rapid correction.
-- Source: Day 10 > Sodium
-
-## Trap 33 — ROP one-time screen
-- Tempting: Normal first exam = done
-- Why it looks right: A normal snapshot feels reassuring.
-- Decisive clue: ROP evolves with retinal vascularization.
-- Correct rule: Serial timed examinations continue until safe stopping criteria are met.
-- Latest protocol: AAP/AAO/AAPOS ROP screening framework.
-- In the exam: ROP screening is longitudinal.
-- Source: Day 11 > ROP
-
-## Trap 34 — Oxygen exposure alone determines ROP
-- Tempting: Screen/treat based on oxygen history
-- Why it looks right: Oxygen is a known risk factor.
-- Decisive clue: Immaturity/BW plus retinal findings drive screening/treatment.
-- Correct rule: Use GA/BW/risk criteria and zone/stage/plus disease.
-- Latest protocol: AAP ROP framework.
-- In the exam: Do not reduce ROP to oxygen exposure.
-- Source: Day 11 > ROP
-
-## Trap 35 — Grade IV IVH terminology
-- Tempting: Call PVHI “Grade IV IVH extension”
-- Why it looks right: Traditional Papile language is memorable.
-- Decisive clue: Modern concept recognizes venous infarction pathophysiology.
-- Correct rule: Use periventricular hemorrhagic infarction (PVHI) when appropriate.
-- Latest protocol: Contemporary neonatal neurology.
-- In the exam: If the stem tests mechanism, choose venous infarction concept.
-- Source: Day 11 > IVH
-
-## Trap 36 — Chronologic age only
-- Tempting: Assess development without correction
-- Why it looks right: Calendar age is simple.
-- Decisive clue: Preterm birth shifts expected milestone timing.
-- Correct rule: Use corrected age for early developmental assessment per follow-up program.
-- Latest protocol: Neonatal follow-up standards.
-- In the exam: Always ask whether milestone age should be corrected.
-- Source: Day 11 > Follow-up
-
-## Trap 37 — Bicarbonate for every metabolic acidosis
-- Tempting: Give bicarbonate whenever pH low
-- Why it looks right: Bicarbonate seems to correct the number.
-- Decisive clue: It does not fix shock/sepsis/hypoxia and can cause harm if used reflexively.
-- Correct rule: Treat underlying cause; use bicarbonate only for specific indications/protocols.
-- Latest protocol: Standard neonatal critical-care practice.
-- In the exam: Correct physiology, not just the pH.
-- Source: Day 10 > Acid-base
-
-## Trap 38 — Treat PPHN before lung recruitment
-- Tempting: Jump to iNO with underexpanded lung
-- Why it looks right: iNO is the classic PPHN drug.
-- Decisive clue: Pulmonary vasodilation works poorly if lung disease/recruitment/perfusion are not optimized.
-- Correct rule: Optimize oxygenation, ventilation, lung recruitment, systemic BP and acidosis; confirm physiology by echo.
-- Latest protocol: PPHN standard practice.
-- In the exam: Fix lung and circulation before/alongside vasodilator.
+## Trap 34 — PPHN vasodilator
+- Tempting: Give pulmonary vasodilator for any low saturation.
+- Why it looks right: Hypoxemia is typical.
+- Decisive clue: CHD/LV dysfunction/lung disease can alter strategy.
+- Correct rule: Optimize lung/perfusion and use echo phenotype when feasible.
+- Latest protocol: Current PPHN practice
+- In the exam: The same SpO₂ can have different physiology.
 - Source: Day 9 > PPHN
 
-## Trap 39 — Stop follow-up after NICU discharge
-- Tempting: Discharge ends neonatal care
-- Why it looks right: Acute problems are stabilized.
-- Decisive clue: Prematurity/HIE/ROP/IVH risks emerge over months-years.
-- Correct rule: Structured neurodevelopmental, hearing, vision and growth follow-up is part of treatment.
-- Latest protocol: AAP TH 2026 + neonatal follow-up standards.
-- In the exam: Longitudinal outcome is part of the exam answer.
-- Source: Days 7/11 > Follow-up
+## Trap 35 — Mix hypoglycemia frameworks
+- Tempting: Use CPS/PES/IAP thresholds interchangeably.
+- Why it looks right: All are authoritative.
+- Decisive clue: Age windows and purposes differ.
+- Correct rule: Use the named framework; for Indian IAP questions use IAP operational thresholds.
+- Latest protocol: IAP / CPS / PES
+- In the exam: Framework label is a test clue.
+- Source: Error Notebook > ERR-D10-Q8
+
+## Trap 36 — Early sodium
+- Tempting: Newborns cannot excrete sodium, so replace aggressively.
+- Why it looks right: Renal immaturity suggests poor excretion.
+- Decisive clue: Normal postnatal ECF contraction includes natriuresis/diuresis.
+- Correct rule: Individualize by weight, urine output, Na and gestation.
+- Latest protocol: Neonatal fluid physiology
+- In the exam: Avoid false absolutes.
+- Source: Error Notebook > ERR-D10-Q15
+
+## Trap 37 — GIR = D%
+- Tempting: The GIR number equals dextrose percentage.
+- Why it looks right: Both are glucose-delivery numbers.
+- Decisive clue: Fluid rate changes the relationship.
+- Correct rule: D% = GIR ×144 ÷ mL/kg/day.
+- Latest protocol: Standard neonatal calculation
+- In the exam: Write formula before substituting.
+- Source: Error Notebook > ERR-D10-Q47
+
+## Trap 38 — Low insulin excludes hyperinsulinism
+- Tempting: Undetectable insulin rules it out.
+- Why it looks right: Disease name suggests measurable insulin.
+- Decisive clue: Insulin secretion can be intermittent; metabolic fuel suppression matters.
+- Correct rule: Use low BOHB/FFA + glucagon response and full critical sample.
+- Latest protocol: PES-style evaluation
+- In the exam: Physiology can be more diagnostic than one insulin value.
+- Source: Error Notebook > ERR-D10-Q50
+
+## Trap 39 — OTC vs CPS1
+- Tempting: Both have the same urine orotic acid pattern.
+- Why it looks right: Both cause hyperammonemia.
+- Decisive clue: OTC increases orotic acid; CPS1 does not.
+- Correct rule: Use urine orotic acid as discriminator.
+- Latest protocol: Metabolic medicine standard
+- In the exam: Memorize the pathway branch.
+- Source: Day 10/12 > Retest concept
+
+## Trap 40 — AAP ROP limits in India
+- Tempting: Use classic US AAP screening limits for Indian stem.
+- Why it looks right: AAP criteria are familiar.
+- Decisive clue: NNF India uses broader criteria.
+- Correct rule: Use NNF criteria when Indian/NNF framework is implied.
+- Latest protocol: NNF India ROP 2020
+- In the exam: Do not mix screening eligibility rules.
+- Source: Day 11 > ROP
+
+## Trap 41 — Stop ROP follow-up after anti-VEGF
+- Tempting: Stop when fundus looks quiet.
+- Why it looks right: Regression can look reassuring.
+- Decisive clue: Late recurrence/reactivation can occur.
+- Correct rule: NNF follow-up at least to 65 wk PMA after treatment.
+- Latest protocol: NNF India
+- In the exam: Quiet is not the same as fully vascularized.
+- Source: Day 11 > ROP
+
+## Trap 42 — Bevacizumab zone 2
+- Tempting: Use bevacizumab routinely for type 1 zone 2 ROP.
+- Why it looks right: Anti-VEGF is effective in posterior disease.
+- Decisive clue: NNF 2020 restricts bevacizumab recommendation to zone 1 type 1.
+- Correct rule: Use laser/appropriate specialist treatment for zone 2 per protocol.
+- Latest protocol: NNF India ROP 2020
+- In the exam: Read zone carefully.
+- Source: Day 11 > ROP
+
+## Trap 43 — PVHI terminology
+- Tempting: PVHI is simply blood extending from ventricle into parenchyma.
+- Why it looks right: Older Papile grade IV wording persists.
+- Decisive clue: Modern concept is venous infarction.
+- Correct rule: Know both Papile exam label and Volpe pathophysiology.
+- Latest protocol: Contemporary neuroimaging
+- In the exam: State the framework if wording is tested.
+- Source: Day 11 > IVH
+
+## Trap 44 — Wait for bulging fontanelle
+- Tempting: PHVD intervention begins only after clinical pressure signs.
+- Why it looks right: Hydrocephalus signs are memorable.
+- Decisive clue: Clinical signs can lag ultrasound progression.
+- Correct rule: Serial ventricular measurements should guide earlier action.
+- Latest protocol: Preterm brain imaging practice
+- In the exam: Imaging beats late pressure signs.
+- Source: Day 11 > PHVD
+
+## Trap 45 — Refractory hypocalcemia
+- Tempting: Give more calcium repeatedly.
+- Why it looks right: Low calcium is obvious.
+- Decisive clue: Hypomagnesemia can make hypocalcemia refractory.
+- Correct rule: Check and correct magnesium.
+- Latest protocol: Standard neonatal electrolyte care
+- In the exam: Refractory Ca → think Mg.
+- Source: Day 10 > Calcium

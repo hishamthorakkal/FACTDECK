@@ -1,226 +1,179 @@
 <!-- Neonatology · Part 3 Volatile Facts Deck -->
 
-# Personal Priority (AMBER)
+# Personal Priority (RED / AMBER)
 
-## Jensen BPD grade at 36 wk PMA — what is Grade 3?
-- Grade 3 = invasive mechanical ventilation
-- Trap: CPAP/NIPPV at 36 wk PMA is Grade 2, not Grade 3
-- Decisive clue: Jensen grading is based on the type of support at 36 wk PMA
-- Source: Day 5 > BPD > Error Notebook 1× AMBER
+## DOPE: circuit disconnection = ?
+- Equipment failure
+- Priority: red
+- Source: Error Notebook + Day 12 retest tracker
 
-# Must-Know Numbers / Doses / Cutoffs
+## Jensen BPD: NIPPV at 36 wk PMA = ?
+- Grade 2
+- Priority: red
+- Source: Error Notebook + Day 12 retest tracker
 
-## NRP
-- PPV 40–60/min; compressions if HR <60 after effective ventilation; 3:1
-- Trap: Do not compress at HR 70
-- Source: Day 1 > NRP
+## Hyperinsulinism physiology?
+- Low BOHB + low FFA + glucagon response
+- Priority: red
+- Source: Error Notebook + Day 12 retest tracker
 
-## Epinephrine
-- IV/UVC 0.01–0.03 mg/kg; ET 0.05–0.1 mg/kg; q3–5 min
-- Trap: Route determines dose
-- Source: Day 1 > Drugs
+## OTC vs CPS1?
+- Urine orotic acid discriminator
+- Priority: red
+- Source: Error Notebook + Day 12 retest tracker
 
-## DCC
-- ≥60 s for most eligible stable infants
-- Trap: Do not delay urgent resuscitation that cannot be performed with intact cord
-- Source: Day 1 > Cord
+# One-Page Recall
 
-## RDS CPAP
-- 6–8 cm H₂O typical
-- Trap: HFNC ≠ predictable CPAP
-- Source: Day 2 > NRS
+## PPV
+- IAP 40–60/min; AHA/AAP 2025 30–60/min; rising HR = success.
 
-## Surfactant trigger
-- >28 wk: NRS MAP ≥6 + FiO₂ ≥0.30 OR lung-US evidence
-- Trap: Threshold is for surfactant, not automatic intubation
-- Source: Day 2 > Surfactant
+## Compressions
+- HR <60 after effective PPV; 3:1.
 
-## Poractant
-- 200 mg/kg initial
-- Trap: 100 mg/kg is an older/lower-dose trap
-- Source: Day 2 > Surfactant
+## Adrenaline IAP
+- 1:10,000 IV 0.2 mL/kg common anchor (0.1–0.3); ET 1 mL/kg; q3–5 min.
 
-## SpO₂ <28 wk on O₂
-- 90–94%; alarms ~89–95%
-- Trap: Avoid both hypoxia and hyperoxia
-- Source: Day 2 > Oxygen
+## Volume IAP
+- NS 10 mL/kg over 5–10 min.
 
-## Caffeine citrate
-- 20 mg/kg load; 5–10 mg/kg/day maintenance
-- Trap: Citrate vs base dose wording
-- Source: Day 4 > AOP
+## Preterm O₂
+- IAP 21–30%; AHA/AAP 2025 <32 wk 30–100%.
 
-## Bilirubin rate
-- ≥0.3 mg/dL/h <24 h; ≥0.2 mg/dL/h after 24 h
-- Trap: Trajectory can reveal hemolysis before absolute value looks dramatic
-- Source: Day 6 > Hemolysis
+## NNF RDS CPAP
+- Start 5 cm H₂O; HFNC not primary RDS support.
 
-## Escalation
-- 2 mg/dL below exchange threshold; TSB q2h
-- Trap: Do not wait for exchange line
-- Source: Day 6 > Escalation
+## European RDS
+- CPAP 6–8; surfactant if worsening + MAP ≥6 / FiO₂ ≥0.30 or LUS; poractant 200 mg/kg.
 
-## Cooling
-- ≥36 wk evidence; ≤6 h; 33.5–34.5°C; 72 h
-- Trap: 35 wk is individualized, not equivalent evidence
-- Source: Day 7 > TH
+## Caffeine
+- 20 mg/kg load; 5–10 mg/kg/day.
 
-## Phenobarbital
-- 20 mg/kg IV first load; additional 10–20 mg/kg if needed
-- Trap: First-line remains phenobarbital
-- Source: Day 7 > Seizures
+## Sepsis
+- ICMR 5–7 / 10–14 / 21 d depending syndrome; review at 48 h.
 
-## PDA ibuprofen
-- 10 mg/kg then 5 mg/kg at 24/48 h
-- Trap: Do not treat every PDA
-- Source: Day 9 > PDA
+## NNF jaundice
+- TSB if TcB within ~2.9 mg/dL of threshold; stop ≥2.9 below; NNF no routine IVIG.
 
-## ROP screen
-- BW ≤1500 g or GA ≤30 wk + selected larger unstable infants
-- Trap: Screening is serial
-- Source: Day 11 > ROP
+## TH India
+- NNF 2021: >36 wk, <6 h, high-quality NICU + strict criteria; HELIX caveat.
 
-# Timing Windows & Sequences
+## TH AAP
+- ≥36 wk moderate-severe HIE; 33.5–34.5°C; ≤6 h; 72 h.
 
-## Resuscitation — sequence
-1. Ventilation
-2. ventilation corrective steps/airway
-3. compressions if HR <60
-4. epinephrine if HR remains <60
+## Ibuprofen PDA
+- 10 → 5 → 5 mg/kg at 0, 24, 48 h.
 
-## EOS stewardship — sequence
-1. Cultures
-2. empiric therapy if indicated
-3. reassess at 24–48 h
-4. stop/narrow when cultures/clinical course permit
+## IAP hypoglycemia
+- 25 / 35 / 45 / 60 mg/dL operational thresholds by age window.
 
-## Jaundice escalation — sequence
-1. Intensive phototherapy
-2. escalation at 2 mg/dL below exchange line
-3. q2h TSB/exchange readiness
-4. exchange for threshold or ABE
+## GIR
+- D% × mL/kg/day ÷144.
 
-## Therapeutic hypothermia — sequence
-1. Identify/stage within 6 h
-2. cool 33.5–34.5°C for 72 h
-3. controlled rewarming
-4. MRI/follow-up
+## OI
+- MAP × FiO₂ (%) ÷ PaO₂.
 
-## NEC — sequence
-1. NPO
-2. decompression
-3. cultures/antibiotics + perfusion
-4. serial imaging
-5. surgery for perforation/deterioration
+## NNF ROP
+- GA <34 wk or BW <2000 g if GA unknown; 34–36 wk + risk; follow ≥65 wk PMA after treatment.
 
-## PDA — sequence
-1. Echo-confirm physiology
-2. expectant management for many
-3. selective medication for hsPDA
-4. device/surgery if persistent selected case
+# Must-Know Timing Windows
 
-## Neonatal seizure — sequence
-1. ABC/glucose
-2. correct metabolic trigger
-3. EEG
-4. phenobarbital
-5. second line if needed
-6. stop ASM before discharge if acute provoked seizures resolved/no epilepsy
+## DCC — timing
+- ≥60 s when immediate resuscitation is not required.
 
-# First-Line vs Definitive / Initial vs Definitive
+## Golden minute — timing
+- Ventilation should begin within 60 s when indicated.
 
-## Apnea/HR<100 at birth: first-line vs next step
-- First-line: PPV
-- Definitive / next escalation: Advanced airway → compressions if HR<60
+## TH — timing
+- NNF India <6 h; AAP standard ≤6 h; 72 h duration.
 
-## RDS: first-line vs next step
-- First-line: CPAP/NIPPV
-- Definitive / next escalation: Surfactant; MV if support fails
+## Ibuprofen PDA — timing
+- 0, 24, 48 h.
 
-## Tension pneumothorax, unstable: first-line vs next step
-- First-line: Needle/catheter decompression
-- Definitive / next escalation: Drain/chest tube per unit protocol
+## NNF ROP first screen — timing
+- 4 wk PNA; <28 wk or BW <1200 g → 2–3 wk.
 
-## EOS: first-line vs next step
-- First-line: Blood culture + empiric antibiotics if indicated
-- Definitive / next escalation: Culture-directed narrow therapy
+## Preterm HUS — timing
+- Early scan around first week and repeat around 4–6 wk; earlier repeat with significant IVH/WMI.
 
-## Jaundice: first-line vs next step
-- First-line: Intensive phototherapy
-- Definitive / next escalation: Exchange for threshold/ABE
+# Formula Box
 
-## Neonatal seizure: first-line vs next step
-- First-line: Phenobarbital
-- Definitive / next escalation: Phenytoin/fosphenytoin, levetiracetam, midazolam/lidocaine as appropriate
+## GIR — formula?
+- GIR = D% × mL/kg/day ÷144
+- Trap: Use 10 for D10, not 0.10.
 
-## NEC: first-line vs next step
-- First-line: NPO/decompression/antibiotics
-- Definitive / next escalation: Surgery for perforation/necrosis/deterioration
+## Required D% — formula?
+- Required D% = GIR ×144 ÷ mL/kg/day
+- Trap: Fluid restriction may require higher D%.
 
-## hsPDA: first-line vs next step
-- First-line: Expectant/supportive in many
-- Definitive / next escalation: Selective drug → transcatheter/surgical closure in persistent symptomatic cases
+## OI — formula?
+- OI = MAP × FiO₂ (%) ÷ PaO₂
+- Trap: If using FiO₂ fraction, multiply by 100.
 
-# Close-Distractor Discriminators
+## Corrected age — formula?
+- Corrected age = PNA − (40 − GA at birth)
+- Trap: Different from PMA = GA + PNA.
 
-## RDS vs TTN
-- Decisive clue: Low-volume ground glass + air bronchograms vs hyperinflation + fissural fluid
+## Double-volume exchange — formula?
+- Double-volume exchange ≈ 2 × estimated blood volume
+- Trap: Exact blood-volume assumption may vary by protocol.
 
-## RDS vs PPHN
-- Decisive clue: Parenchymal surfactant-deficient lung vs high PVR/right-to-left shunt with labile hypoxemia
+# Close-Distractor Flash Facts
 
-## AOP vs secondary apnea
-- Decisive clue: Stable preterm developmental pattern vs sepsis/metabolic/CNS/temperature/airway cause
+## IAP PPV rate vs AHA 2025
+- Decisive clue: 40–60 vs 30–60 — framework name.
 
-## ABO HDFN vs HS
-- Decisive clue: DAT+ immune context vs DAT− + high MCHC + spherocytes + family history
+## IAP O₂ vs AHA 2025 <32 wk
+- Decisive clue: 21–30% vs 30–100% — framework name.
 
-## HIE vs other encephalopathy
-- Decisive clue: Perinatal hypoxic-ischemic context + encephalopathy vs infection/metabolic/stroke/genetic causes
+## NNF CPAP vs European RDS
+- Decisive clue: 5 cm H₂O vs 6–8 cm H₂O — framework name.
 
-## Jitteriness vs seizure
-- Decisive clue: Stimulus-sensitive/suppressible with no ictal EEG vs electrographic seizure
+## NNF IVIG vs AAP 2022
+- Decisive clue: NNF not recommended routinely; AAP selected use near escalation threshold.
 
-## PDA vs PPHN ductal flow
-- Decisive clue: Usually left-to-right hsPDA vs right-to-left/bidirectional shunt from high PVR
+## HIE India vs AAP high-income
+- Decisive clue: NNF/HELIX setting caveat vs AAP efficacy framework.
+
+## PDA vs PPHN
+- Decisive clue: Shunt direction / PVR physiology.
+
+## Hyperinsulinism vs FAOD
+- Decisive clue: BOHB + FFA both suppressed vs FFA high with low ketones.
+
+## OTC vs CPS1
+- Decisive clue: Orotic acid high vs low/normal.
+
+## ROP stage 1 vs 2
+- Decisive clue: Line vs ridge.
 
 ## IVH vs PVL
-- Decisive clue: Hemorrhage from germinal matrix/intraventricular system vs white-matter injury
+- Decisive clue: Hemorrhage vs white-matter injury.
 
-## PVHI vs “grade IV IVH”
-- Decisive clue: Venous infarction concept, not simple extension
+# Image / Data Pattern Clues
 
-## ROP screening vs treatment
-- Decisive clue: GA/BW/risk determine who is screened; zone/stage/plus determine disease severity/treatment urgency
+## RDS — imaging clue
+- Low-volume reticulogranular/ground-glass lungs + air bronchograms.
 
-# Image / ECG / EEG / Data Pattern Clues
+## TTN — imaging clue
+- Hyperinflation, perihilar streaking, fissural fluid.
 
-## RDS CXR
-- low lung volumes, diffuse reticulogranular/ground-glass pattern, air bronchograms.
+## MAS — imaging clue
+- Patchy coarse opacities + hyperinflation.
 
-## TTN CXR
-- hyperinflation, perihilar streaking/fissural fluid.
+## NEC — imaging clue
+- Pneumatosis; portal venous gas; free air = perforation.
 
-## MAS CXR
-- coarse patchy opacities with hyperinflation; air leak risk.
+## aEEG seizure — imaging clue
+- Trend change must be interpreted with evolving raw EEG.
 
-## Tension pneumothorax
-- sudden clinical deterioration; if unstable, treatment precedes ideal imaging.
+## ROP — imaging clue
+- Line → ridge → extraretinal fibrovascular proliferation; plus = posterior vascular dilation/tortuosity.
 
-## aEEG
-- useful bedside trend/triage; full continuous video EEG is preferred for seizure diagnosis when available.
+## IVH — imaging clue
+- Caudothalamic groove GMH → IVH ± ventricular dilation.
 
-## NEC X-ray
-- pneumatosis intestinalis; portal venous gas; free air = perforation.
+## PVL — imaging clue
+- Persistent periventricular echogenicity, later cysts; MRI better for noncystic WMI.
 
-## PDA echo
-- integrate ductal flow, LA/LV loading and systemic diastolic flow; one diameter alone is insufficient.
-
-## PPHN
-- labile hypoxemia + pre/postductal difference + right-to-left/bidirectional shunting on echo.
-
-## IVH cranial US
-- Grade III includes ventricular dilation; PVHI is separate venous infarction pathology.
-
-## PVL
-- cystic lesions may be seen on US; diffuse non-cystic white-matter injury may be better seen on MRI.
+## PPHN echo — imaging clue
+- R→L/bidirectional shunting, septal flattening, RV pressure/function; exclude CHD.
