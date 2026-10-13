@@ -22,10 +22,10 @@ for s in ET.fromstring(z.read('word/styles.xml')).iter(W + 'style'):
     n = s.find(W + 'name')
     names[s.get(W + 'styleId')] = (n.get(W + 'val') if n is not None else '').lower()
 
-TOP = {'heading 1', 'decktitle', 'title'}            # → "#"
+TOP = {'heading 1', 'decktitle', 'title', 'covertitle'}            # → "#"
 SEC = {'heading 2', 'h1x'}                           # → "##"
 SUB3 = {'heading 3', 'h2x'}                          # → "###" (trap titles in Part 2)
-SUBT = {'subtitle', 'decksubtitle'}
+SUBT = {'subtitle', 'decksubtitle', 'coversub'}
 
 
 def ptext(p):
@@ -57,7 +57,8 @@ unbullet = lambda t: re.sub(r'^[•·▪]\s*', '', t).strip()
 is_bullet = lambda t: t[:1] in '•·▪☐□'
 cap = lambda t: t[:1].upper() + t[1:]
 tidy = lambda lines: re.sub(r'\n{3,}', '\n\n', '\n'.join(lines)).strip() + '\n'
-trace = lambda t: re.sub(r'^Trace-?back:\s*', 'Source: ', t)
+trace = lambda t: re.sub(r'^(Trace-?back|TRACE\s*/\s*SOURCE)\s*:\s*', 'Source: ', t, flags=re.I)
+is_trace = lambda t: bool(re.match(r'^(Trace-?back|TRACE\s*/\s*SOURCE|Source)\s*:', t, re.I))
 
 
 def split_steps(text):
@@ -80,7 +81,7 @@ def box(title, paras):
         if len(steps) >= 2: out += [f'> {n}. {s}' for n, s in steps]
         elif re.match(r'^\d+\.\s', b): out.append(f'> {b}')
         elif ' • ' in b: out += [f'> - {s.strip()}' for s in b.split(' • ') if s.strip()]
-        elif b.startswith('Trace-back') or b.startswith('Source'): out.append(f'> {trace(b)}')
+        elif is_trace(b): out.append(f'> {trace(b)}')
         else: out.append(f'> - {b}' if len(paras) > 1 else f'> {b}')
     return '\n'.join(out)
 
@@ -136,21 +137,8 @@ for it in buckets['p3']:
         p3_sections.append(cur)
     elif cur:
         cur['items'].append(it)
-NOTES_ONLY = re.compile(r'checklist|source|reference|maintenance', re.I)
+NOTES_ONLY = re.compile(r'checklist|source|reference|maintenance|ledger|register|\bQA\b|control', re.I)
 PRIORITY = re.compile(r'\b(RED|AMBER)\b')
-
-# ---------------------------------------------------------------- rapid-revision.md
-rr = [f'<!-- {sysname} · Part 1 Complete Rapid Revision Note -->']
-emit_notes(front, rr)
-if not any(l.startswith('# ') for l in rr): rr.insert(1, f'# {sysname}')
-rr += ['', '# Complete Rapid Revision Note']
-emit_notes(buckets['p1'], rr)
-for sec in p3_sections:
-    if NOTES_ONLY.search(sec['title']) or PRIORITY.search(sec['title']):
-        rr += ['', f'## {sec["title"]}', '']
-        emit_notes(sec['items'], rr)
-emit_notes(buckets['refs'], rr)
-open(f'{outdir}/rapid-revision.md', 'w', encoding='utf8').write(tidy(rr))
 
 # ---------------------------------------------------------------- traps.md
 LABEL = {'tempting wrong choice': 'Tempting', 'decisive discriminator': 'Decisive clue', 'what to do in the exam': 'In the exam', 'trace-back': 'Source'}
@@ -171,9 +159,16 @@ for it in buckets['p2']:
             tr.append(field(label, value))
         continue
     rows = it[1]
-    if all(len(r) == 1 for r in rows):                       # intro box
+    if all(len(r) == 1 for r in rows):
         paras = [p for r in rows for p in r[0]]
-        tr += ['', box(paras[0], paras[1:]), '']
+        if re.match(r'^Trap\s*\d+', paras[0]):               # one-cell trap: "Label: value" lines
+            tr += ['', f'## {paras[0]}']
+            for v in paras[1:]:
+                if is_trace(v): tr.append('- ' + trace(v)); continue
+                label, sep, value = unbullet(v).partition(':')
+                if sep: tr.append(field(label, value))
+        else:                                                 # intro box
+            tr += ['', box(paras[0], paras[1:]), '']
         continue
     tr += ['', f'## {rows[0][0][0]}']                         # old table-based trap
     for r in rows[1:]:
@@ -188,6 +183,7 @@ COLLABEL = [(r'trap', 'Trap: '), (r'clue|discriminat', 'Decisive clue: '), (r'tr
 collabel = lambda h: next((lab for re_, lab in COLLABEL if re.search(re_, h, re.I)), '')
 
 fd = [f'<!-- {sysname} · Part 3 Volatile Facts Deck -->', '']
+leftovers = []  # Part 3 lines that do not make a clean card → appended to rapid-revision.md
 
 
 def priority_cards(sec):
@@ -221,13 +217,35 @@ for sec in p3_sections:
         if it[0] == 'p':
             t = it[2]
             if not is_bullet(t): continue
-            head, sep, rest = unbullet(t).partition(':')
-            if not sep: continue
-            suffix = ' — timing' if 'timing' in low else ' — imaging clue' if re.search(r'image|pattern', low) else ''
-            fd += [f'## {head.strip()}{suffix}', f'- {cap(rest.strip())}', '']
+            body = unbullet(t)
+            m = re.search(r'\s*\[([^\]]+)\]\s*$', body)          # trailing "[D13 > Growth]" trace tag
+            src_line = [f'- Source: {m.group(1)}'] if m else []
+            body = body[:m.start()] if m else body
+            head, sep, rest = body.partition(':')
+            pattern = re.search(r'image|pattern|data', low)
+            if pattern and '→' in body:                          # "clue → answer" becomes a recall question
+                lead = head.strip() + ': ' if sep and len(head) <= 30 else ''
+                segs = [x.strip() for x in (rest if lead else body).rstrip('.').split(';')]
+                segs = segs if all('→' in x for x in segs) else [(rest if lead else body).rstrip('.')]
+                for seg in segs:
+                    q, _, a = seg.rpartition('→')
+                    fd += [f'## {lead}{q.strip()} → ?', f'- {cap(a.strip())}'] + src_line + ['']
+            elif sep and len(head) <= 60:
+                suffix = ' — timing' if 'timing' in low else ' — imaging clue' if pattern else ''
+                fd += [f'## {head.strip()}{suffix}', f'- {cap(rest.strip())}'] + src_line + ['']
+            else:
+                leftovers.append(md_bullet(t))
             continue
         rows = it[1]
-        if all(len(r) == 1 for r in rows): continue           # intro box such as "USE"
+        if all(len(r) == 1 for r in rows):
+            paras = [p for r in rows for p in r[0]]
+            steps = [re.sub(r'^\d+\.\s*', '', unbullet(x)) for x in paras[1:] if re.match(r'^\d+\.\s', unbullet(x))]
+            if len(steps) >= 3:                                   # algorithm box → sequence card
+                name = re.sub(r'^(QUICK\s+)?ALGORITHM\s*[A-Z0-9]*\s*[—–-]\s*', '', paras[0], flags=re.I)
+                fd.append(f'## {name} — sequence')
+                fd += [f'{i}. {x}' for i, x in enumerate(steps, 1)]
+                fd += ['- ' + trace(x) for x in paras[1:] if is_trace(x)] + ['']
+            continue                                              # other boxes (e.g. "USE") are intros
         hdr = [cell(c) for c in rows[0]]
         for r in rows[1:]:
             c = [cell(x) for x in r] + [''] * (len(hdr) - len(r))
@@ -235,11 +253,14 @@ for sec in p3_sections:
             if 'formula' in low:
                 name = re.split(r'\s[=≈]\s', c[0])[0].strip()
                 fd += [f'## {name} — formula?', f'- {c[0]}']
+                if len(hdr) >= 3 and re.search(r'substitut|worked', hdr[1], re.I):   # worked example columns
+                    fd += [f'- Worked example: {c[1]} → {c[2]}', '']
+                    continue
             elif 'sequence' in low and '→' in c[1]:
                 fd.append(f'## {c[0]} — sequence')
                 fd += [f'{i}. {x.strip()}' for i, x in enumerate(c[1].split('→'), 1)]
                 c = c[:1] + [''] + c[2:]
-            elif 'first-line' in low:
+            elif any(re.search(r'first-line|initial', h, re.I) for h in hdr[1:]):
                 fd.append(f'## {c[0]}: first-line vs next step')
             else:
                 fd.append(f'## {c[0]}')
@@ -247,4 +268,20 @@ for sec in p3_sections:
                 if v: fd.append(f'- {collabel(h)}{v}')
             fd.append('')
 open(f'{outdir}/fact-deck.md', 'w', encoding='utf8').write(tidy(fd))
+
+# ---------------------------------------------------------------- rapid-revision.md
+rr = [f'<!-- {sysname} · Part 1 Complete Rapid Revision Note -->']
+emit_notes(front, rr)
+if not any(l.startswith('# ') for l in rr): rr.insert(1, f'# {sysname}')
+rr += ['', '# Complete Rapid Revision Note']
+emit_notes(buckets['p1'], rr)
+for sec in p3_sections:
+    if NOTES_ONLY.search(sec['title']) or PRIORITY.search(sec['title']):
+        rr += ['', f'## {sec["title"]}', '']
+        emit_notes(sec['items'], rr)
+if leftovers:
+    rr += ['', '## Volatile Facts Deck — other one-liners', ''] + leftovers
+emit_notes(buckets['refs'], rr)
+open(f'{outdir}/rapid-revision.md', 'w', encoding='utf8').write(tidy(rr))
+
 print('ok')
