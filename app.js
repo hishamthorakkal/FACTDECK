@@ -278,6 +278,7 @@
           <button class="btn small ghost" data-a="print">🖨️ Print</button>
         </div>
       </div>
+      ${tn.intro.length ? notesHTML(tn.intro) : ''}
       <input type="search" id="trapSearch" placeholder="🔍  Search traps…" />
       <div class="tn-list">${tn.traps.map(t => {
         const [head, ...rest] = t.title.split(/\s+[—–-]\s+/);

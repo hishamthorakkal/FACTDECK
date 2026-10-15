@@ -157,6 +157,8 @@ for it in buckets['p2']:
         elif is_bullet(t) and ':' in t:
             label, _, value = unbullet(t).partition(':')
             tr.append(field(label, value))
+        elif not any(l.startswith('## ') for l in tr):         # intro text before the first trap
+            tr += ['', '> **ABOUT THIS TRAP NOTE**', f'> {t}', '']
         continue
     rows = it[1]
     if all(len(r) == 1 for r in rows):

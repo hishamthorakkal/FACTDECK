@@ -2,6 +2,9 @@
 
 # Growth, Development, Nutrition, Genetics & IEM — System Trap Note
 
+> **ABOUT THIS TRAP NOTE**
+> RED concepts first, then AMBER/Improving, then common system-wide traps. No Day 13–15 personal errors were present in the retrieved notebook; the only personalized IEM overlap is Day 10 Q65 (R1 passed).
+
 ## Trap 1 — AMBER — OTC vs CPS1/NAGS
 - Tempting: Low citrulline alone proves CPS1 deficiency.
 - Why it looks right: Both proximal UCDs and OTC can have low citrulline.
