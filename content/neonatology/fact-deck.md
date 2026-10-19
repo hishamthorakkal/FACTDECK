@@ -169,8 +169,8 @@
 ## ROP — imaging clue
 - Line → ridge → extraretinal fibrovascular proliferation; plus = posterior vascular dilation/tortuosity.
 
-## IVH — imaging clue
-- Caudothalamic groove GMH → IVH ± ventricular dilation.
+## IVH: caudothalamic groove GMH → ?
+- IVH ± ventricular dilation
 
 ## PVL — imaging clue
 - Persistent periventricular echogenicity, later cysts; MRI better for noncystic WMI.

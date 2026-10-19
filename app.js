@@ -63,7 +63,7 @@
       const blocks = parseNotes(rr);
       if (blocks.length) notes[s.id] = blocks;
       const t = parseTraps(tn);
-      if (t.traps.length) trapNotes[s.id] = t;
+      if (t.traps.length || t.intro.length) trapNotes[s.id] = t;
     }));
     const order = Object.fromEntries(SYSTEMS.map((s, i) => [s.id, i]));
     cards.sort((a, b) => order[a.system] - order[b.system]); // stable: document order within a system
@@ -98,7 +98,7 @@
   function lineHTML(l, tag = 'li') {
     if (TAG[l.k]) return `<${tag} class="ln ${l.k}"><b class="tag">${TAG[l.k]}</b> ${fmt(l.t)}</${tag}>`;
     if (l.k === 'step') return `<${tag} class="ln step"><span class="stepn">${l.n}</span><span>${fmt(l.t)}</span></${tag}>`;
-    if (l.k === 'check') return `<${tag} class="ln check"><label><input type="checkbox" /> <span>${fmt(l.t)}</span></label></${tag}>`;
+    if (l.k === 'check') return `<${tag} class="ln check"><label><input type="checkbox" data-ck="${esc(l.t)}" /> <span>${fmt(l.t)}</span></label></${tag}>`;
     const formula = /\s=\s/.test(l.t) && /[×÷*\d]/.test(l.t);
     return `<${tag} class="ln ${formula ? 'formula' : 'text'}">${fmt(l.t)}</${tag}>`;
   }
@@ -189,7 +189,26 @@
   }
 
   /* ------------------------------------------------------------ system */
+  // Ticked checklist items (trap tick-lists, notes checklists) are remembered per system on this device.
+  const CHECKS_KEY = 'factdeck.checks.v1';
+  let checks = (() => { try { return JSON.parse(localStorage.getItem(CHECKS_KEY)) || {}; } catch (_) { return {}; } })();
+  function restoreChecks() {
+    document.querySelectorAll('#system input[data-ck]').forEach(i => { i.checked = !!checks[current + '|' + i.dataset.ck]; });
+  }
+  document.addEventListener('change', e => {
+    const i = e.target;
+    if (!i.matches || !i.matches('#system input[data-ck]')) return;
+    const k = current + '|' + i.dataset.ck;
+    if (i.checked) checks[k] = 1; else delete checks[k];
+    try { localStorage.setItem(CHECKS_KEY, JSON.stringify(checks)); } catch (_) { /* storage unavailable */ }
+  });
+
   function renderSystem() {
+    renderSystemTab();
+    restoreChecks();
+  }
+
+  function renderSystemTab() {
     const s = SYS[current];
     const list = cards.filter(c => c.system === current);
     const due = dueCards(current).length;
@@ -211,7 +230,9 @@
 
     const tabs = [
       ['deck', '🃏 Fact Deck', list.length],
-      ['traps', '⚠️ Traps', trapNotes[current] ? trapNotes[current].traps.length : trapItems(list).length],
+      ['traps', '⚠️ Traps', trapNotes[current]
+        ? trapNotes[current].traps.length || trapNotes[current].intro.reduce((n, b) => n + b.lines.filter(l => /^\[ ?\]/.test(l)).length, 0) || ''
+        : trapItems(list).length],
       ['rapid', '⚡ Rapid Revision', ''],
       ['games', '🎮 Games', ''],
     ];
@@ -267,6 +288,18 @@
 
   function renderTrapNote(tn) {
     const name = esc(SYS[current].name);
+    if (!tn.traps.length) {                      // trap tick-list only (no full trap note in the source)
+      $('#tabContent').innerHTML = `
+        <div class="tab-intro rr-head">
+          <div>
+            <h2>⚠️ Traps · ${name}</h2>
+            <p class="muted">Tick each trap once you have corrected it. Ticks are saved on this device.</p>
+          </div>
+          <button class="btn small ghost" data-a="print">🖨️ Print</button>
+        </div>
+        ${notesHTML(tn.intro)}`;
+      return;
+    }
     $('#tabContent').innerHTML = `
       <div class="tab-intro rr-head">
         <div>
@@ -637,7 +670,7 @@
         <span class="g-ico">${ico}</span>
         <b>${name}</b>
         <span class="g-desc">${desc}</span>
-        <span class="g-meta">${ok ? `${plural(n, unit)}${bestTxt ? ` · 🏆 Best ${bestTxt}` : ''}` : 'Coming soon for this system'}</span>
+        <span class="g-meta">${ok ? `${plural(n, unit)}${bestTxt ? ` · 🏆 Best ${bestTxt}` : ''}` : 'Not enough content for this game in this system’s document yet'}</span>
         ${ok ? '<span class="g-play">▶ Play</span>' : ''}
       </button>`;
     $('#tabContent').innerHTML = `

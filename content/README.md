@@ -61,6 +61,21 @@ The card colour and label (Dose, Cutoff, Timing, Formula, Distractor, Emergency 
 
 *Tempting* and *Why it looks right* are shown first; the other fields stay hidden until **Show the rule** is tapped.
 
+A system whose document has only a trap *list* (no fields) can use a tick-list box instead; ticks are remembered on the device:
+
+```markdown
+> **TOP 15 TRAPS — TICK AFTER CORRECTION**
+> [ ] SVT vs febrile sinus tachycardia
+> [ ] Adenosine vs cardioversion in shock
+```
+
+Converting and checking a new document:
+
+```bash
+python tools/convert_docx.py <file.docx> content/<system> "<System name>"
+python tools/check_coverage.py <file.docx> content/<system>
+```
+
 ## rapid-revision.md
 
 ```markdown

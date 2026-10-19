@@ -81,7 +81,7 @@ def box(title, paras):
         if len(steps) >= 2: out += [f'> {n}. {s}' for n, s in steps]
         elif re.match(r'^\d+\.\s', b): out.append(f'> {b}')
         elif ' • ' in b: out += [f'> - {s.strip()}' for s in b.split(' • ') if s.strip()]
-        elif is_trace(b): out.append(f'> {trace(b)}')
+        elif is_trace(b) or b.startswith('Source'): out.append(f'> {trace(b)}')
         else: out.append(f'> - {b}' if len(paras) > 1 else f'> {b}')
     return '\n'.join(out)
 
@@ -126,8 +126,16 @@ for it in items:
         if it[1] in TOP and t.lower().startswith('reference'): part = 'refs'
     buckets[part].append(it)
 
-# old layout: cover page lines without a style are decoration
-front = [it for it in buckets['front'] if not (it[0] == 'p' and it[1] == '' and not is_bullet(it[2]))]
+# Facts-only document (no "PART n" headings): title/intro first, then every heading-1/2 section is deck material
+FACTS_ONLY = not (buckets['p1'] or buckets['p2'] or buckets['p3'])
+if FACTS_ONLY:
+    SEC = SEC | {'heading 1'}
+    first = next((i for i, it in enumerate(items) if it[0] == 'p' and it[1] in SEC), len(items))
+    buckets = {'front': items[:first], 'p1': [], 'p2': [], 'p3': items[first:], 'refs': []}
+    front = buckets['front']
+else:
+    # old layout: cover page lines without a style are decoration
+    front = [it for it in buckets['front'] if not (it[0] == 'p' and it[1] == '' and not is_bullet(it[2]))]
 
 # Part 3 sections
 p3_sections, cur = [], None
@@ -137,7 +145,9 @@ for it in buckets['p3']:
         p3_sections.append(cur)
     elif cur:
         cur['items'].append(it)
-NOTES_ONLY = re.compile(r'checklist|source|reference|maintenance|ledger|register|\bQA\b|control', re.I)
+NOTES_ONLY = re.compile(r'checklist|source|reference|maintenance|ledger|register|\bQA\b|control|notebook', re.I)
+TRAPLIST = re.compile(r'\btraps?\b', re.I)       # a "Top N traps" tick-list → Traps tab
+is_traplist = lambda sec: TRAPLIST.search(sec['title']) and sec['items'] and all(it[0] == 'p' and is_bullet(it[2]) for it in sec['items'])
 PRIORITY = re.compile(r'\b(RED|AMBER)\b')
 
 # ---------------------------------------------------------------- traps.md
@@ -177,6 +187,9 @@ for it in buckets['p2']:
         for v in (r[1] if len(r) > 1 else []):
             m = re.match(r'Trace-back:\s*(.+)', v)
             tr.append(f'- Source: {m.group(1)}' if m else field(cell(r[0]), v))
+for sec in p3_sections:                                       # "Top N traps — tick after correction" lists
+    if is_traplist(sec):
+        tr += ['', f'> **{sec["title"].upper()}**'] + [f'> [ ] {re.sub(r"^[☐□]\s*", "", unbullet(it[2]))}' for it in sec['items']] + ['']
 open(f'{outdir}/traps.md', 'w', encoding='utf8').write(tidy(tr))
 
 # ---------------------------------------------------------------- fact-deck.md
@@ -212,7 +225,7 @@ if prio:
 
 for sec in p3_sections:
     title = sec['title']
-    if NOTES_ONLY.search(title) or PRIORITY.search(title): continue
+    if NOTES_ONLY.search(title) or PRIORITY.search(title) or is_traplist(sec): continue
     low = title.lower()
     fd += ['', f'# {title}', '']
     for it in sec['items']:
@@ -229,6 +242,12 @@ for sec in p3_sections:
                 lead = head.strip() + ': ' if sep and len(head) <= 30 else ''
                 segs = [x.strip() for x in (rest if lead else body).rstrip('.').split(';')]
                 segs = segs if all('→' in x for x in segs) else [(rest if lead else body).rstrip('.')]
+                # only "clue → short answer" (spaced arrow, answer ≤ 6 words); "R→L" or long progressions stay as text
+                if not all(' → ' in x and len(x.rpartition('→')[2].split()) <= 6 for x in segs):
+                    suffix = ' — imaging clue' if sep and len(head) <= 60 else ''
+                    if suffix: fd += [f'## {head.strip()}{suffix}', f'- {cap(rest.strip())}'] + src_line + ['']
+                    else: leftovers.append(md_bullet(t))
+                    continue
                 for seg in segs:
                     q, _, a = seg.rpartition('→')
                     fd += [f'## {lead}{q.strip()} → ?', f'- {cap(a.strip())}'] + src_line + ['']
@@ -275,10 +294,11 @@ open(f'{outdir}/fact-deck.md', 'w', encoding='utf8').write(tidy(fd))
 rr = [f'<!-- {sysname} · Part 1 Complete Rapid Revision Note -->']
 emit_notes(front, rr)
 if not any(l.startswith('# ') for l in rr): rr.insert(1, f'# {sysname}')
-rr += ['', '# Complete Rapid Revision Note']
+if buckets['p1']: rr += ['', '# Complete Rapid Revision Note']
 emit_notes(buckets['p1'], rr)
 for sec in p3_sections:
-    if NOTES_ONLY.search(sec['title']) or PRIORITY.search(sec['title']):
+    # facts-only documents have no Part 1, so the fact tables double as the printable revision sheet
+    if NOTES_ONLY.search(sec['title']) or PRIORITY.search(sec['title']) or (FACTS_ONLY and not is_traplist(sec)):
         rr += ['', f'## {sec["title"]}', '']
         emit_notes(sec['items'], rr)
 if leftovers:
